@@ -17,9 +17,12 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class SLI_popup_check_with_escapeKey extends BaseClass {
+
+	boolean pop_up_Value;
+
 	@Given("Now user is on Home Page")
 	public void Now_user_is_on_home_page() throws Throwable {
-		
+
 		log.info("It's opening the website URL");
 		Thread.sleep(2000);
 		driver.get(AppURL);
@@ -35,7 +38,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			search_field.sendKeys("HR");
 			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
-		
+
 		}
 	}
 
@@ -43,13 +46,20 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	public void press_escape_key() throws Throwable {
 
 		try {
-			Robot robot = new Robot();
-			robot.keyPress(KeyEvent.VK_ESCAPE);
-			robot.keyRelease(KeyEvent.VK_ESCAPE);
-			Thread.sleep(2000);
-			robot.keyPress(KeyEvent.VK_ESCAPE);
-			robot.keyRelease(KeyEvent.VK_ESCAPE);
-			Thread.sleep(1000);
+			if (!driver.findElements(By.xpath("//ul[@id='sli_autocomplete']")).isEmpty()) {
+				pop_up_Value = wait
+						.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='sli_autocomplete']")))
+						.isDisplayed();
+				System.out.println("pop-up is displayed  " + pop_up_Value);
+				assertTrue(pop_up_Value == true);
+				Robot robot = new Robot();
+				robot.keyPress(KeyEvent.VK_ESCAPE);
+				robot.keyRelease(KeyEvent.VK_ESCAPE);
+				Thread.sleep(2000);
+				robot.keyPress(KeyEvent.VK_ESCAPE);
+				robot.keyRelease(KeyEvent.VK_ESCAPE);
+				Thread.sleep(1000);
+			}
 		} catch (AWTException e) {
 		}
 	}
@@ -58,7 +68,9 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	public void verify_the_pop_up() throws Throwable {
 		try {
 			Thread.sleep(2000);
-			boolean pop_up_Value = driver.findElement(By.xpath("//ul[@id='sli_autocomplete']")).isDisplayed();
+			pop_up_Value = wait
+					.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='sli_autocomplete']")))
+					.isDisplayed();
 			System.out.println("pop-up is displayed  " + pop_up_Value);
 			assertTrue(pop_up_Value == false);
 			boolean img_value = driver.findElement(By.xpath("//div[@class='banner-slides-img']//img[@alt='Banner']"))
@@ -67,7 +79,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			assertTrue(img_value == true);
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			
+
 		}
 
 	}
@@ -81,7 +93,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			sign_In.click();
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			
+
 		}
 	}
 
@@ -97,33 +109,40 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Login']")));
 			login_btn.click();
 		} catch (NoSuchElementException e) {
-			
+
 		}
 	}
 
 	@Then("enter data in Search fields")
 	public void enter_data_in_Search_fields() throws Throwable {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			WebElement search_field = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			search_field.sendKeys("Management");
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 		} catch (InterruptedException e) {
-		
+
 		}
 	}
 
 	@Then("Press Escape key")
 	public void press_Escape_key() throws Throwable {
 		try {
-			Robot robot = new Robot();
-			robot.keyPress(KeyEvent.VK_ESCAPE);
-			robot.keyRelease(KeyEvent.VK_ESCAPE);
-			Thread.sleep(2000);
-			robot.keyPress(KeyEvent.VK_ESCAPE);
-			robot.keyRelease(KeyEvent.VK_ESCAPE);
-			Thread.sleep(1000);
+			if (!driver.findElements(By.xpath("//ul[@id='sli_autocomplete']")).isEmpty()) {
+				pop_up_Value = wait
+						.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='sli_autocomplete']")))
+						.isDisplayed();
+				System.out.println("pop-up is displayed  " + pop_up_Value);
+				assertTrue(pop_up_Value == true);
+				Robot robot = new Robot();
+				robot.keyPress(KeyEvent.VK_ESCAPE);
+				robot.keyRelease(KeyEvent.VK_ESCAPE);
+				Thread.sleep(2000);
+				robot.keyPress(KeyEvent.VK_ESCAPE);
+				robot.keyRelease(KeyEvent.VK_ESCAPE);
+				Thread.sleep(1000);
+			}
 		} catch (AWTException e) {
 		}
 
@@ -133,7 +152,9 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	public void verify_the_Pop_up() throws Throwable {
 		try {
 			Thread.sleep(2000);
-			boolean pop_up_Value = driver.findElement(By.xpath("//ul[@id='sli_autocomplete']")).isDisplayed();
+			pop_up_Value = wait
+					.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='sli_autocomplete']")))
+					.isDisplayed();
 			System.out.println("pop-up is displayed  " + pop_up_Value);
 			assertTrue(pop_up_Value == false);
 
@@ -141,14 +162,14 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			search_field.clear();
 			Thread.sleep(3000);
-			
-			//click on sign out button
+
+			// click on sign out button
 			WebElement sign_Out = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Sign Out']")));
 			js.executeScript("arguments[0].click();", sign_Out);
 			Thread.sleep(3000);
-			
-			//verify the message after sign out
+
+			// verify the message after sign out
 			String verification_Message = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[@class='base']"))).getText();
 
@@ -156,7 +177,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			Assert.assertTrue("user is not sign out from apploication",
 					verification_Message.contains("YOU ARE NOW LOGGED OUT"));
 		} catch (NoSuchElementException e) {
-			
+
 		}
 	}
 
