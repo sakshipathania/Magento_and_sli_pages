@@ -19,7 +19,7 @@ import cucumber.api.java.en.Then;
 public class SLI_popup_check_with_escapeKey extends BaseClass {
 	@Given("Now user is on Home Page")
 	public void Now_user_is_on_home_page() throws Throwable {
-
+		
 		log.info("It's opening the website URL");
 		Thread.sleep(2000);
 		driver.get(AppURL);
@@ -33,7 +33,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			WebElement search_field = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			search_field.sendKeys("HR");
-			Thread.sleep(4000);
+			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 		
 		}
@@ -46,7 +46,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_ESCAPE);
 			robot.keyRelease(KeyEvent.VK_ESCAPE);
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			robot.keyPress(KeyEvent.VK_ESCAPE);
 			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			Thread.sleep(1000);
@@ -120,7 +120,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_ESCAPE);
 			robot.keyRelease(KeyEvent.VK_ESCAPE);
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			robot.keyPress(KeyEvent.VK_ESCAPE);
 			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			Thread.sleep(1000);
