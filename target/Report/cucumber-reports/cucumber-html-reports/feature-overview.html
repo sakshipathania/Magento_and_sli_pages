@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                59,
-                1,
-                5,
+                9,
+                0,
+                0,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 65) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                6,
-                1
+                1,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 7) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   3,
-                   1
+                   1,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>11 Jan 2022, 11:20</td>
+                        <td>11 Jan 2022, 13:57</td>
           </tr>
         </tbody>
       </table>
@@ -325,93 +325,48 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="src-test-java-features-SLI_pop-up_Check_with_escape_key-feature.html">SLI POP UP test</a></td>
         
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
-        <td      class="passed"    >3</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >5</td>
+        <td      class="passed"    >9</td>
+        <td >0</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">9</td>
-        <td class="duration" data-value="20448357400">20s 448ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="src-test-java-features-sli_listing_page-feature.html">SLI POP UP test</a></td>
-        
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-        <td      class="passed"    >18</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">18</td>
-        <td class="duration" data-value="69888224700">1m 9s 888ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="src-test-java-features-Free_magento_pages-feature.html">pagination & Mouse Hovers on Free Magento pages</a></td>
-        
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-        <td      class="passed"    >23</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">23</td>
-        <td class="duration" data-value="132634364000">2m 12s 634ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="src-test-java-features-Paid_Manento_pages-feature.html">pagination & Mouse Hovers on Magento pages</a></td>
-        
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-        <td      class="passed"    >15</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">15</td>
-        <td class="duration" data-value="73273627500">1m 13s 273ms</td>
+        <td class="duration" data-value="54299199100">54s 299ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>4</td>
-            <td>6</td>
       <td>1</td>
-      <td>7</td>
-      <td>59</td>
+            <td>1</td>
+      <td>0</td>
       <td>1</td>
-      <td>5</td>
+      <td>9</td>
       <td>0</td>
       <td>0</td>
-      <td>65</td>
-      <td class="duration">4m 56s 244ms</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td class="duration">54s 299ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>85.71%</td>
-      <td>14.29%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
-      <td>90.77%</td>
-      <td>1.54%</td>
-      <td>7.69%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>14.29%</td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

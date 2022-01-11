@@ -1,305 +1,35 @@
 [
   {
-    "source": "^Click on Free Business PPTs under Free stuff$",
+    "source": "enter data in Search fields",
     "steps": [
       {
-        "name": "Click on Free Business PPTs under Free stuff",
+        "name": "enter data in Search fields",
         "aggregatedDurations": {
-          "average": 7.5189982,
-          "median": 7.5189982
+          "average": 7.1663545,
+          "median": 7.1663545
         },
         "durations": [
           {
-            "duration": 7.5189982,
-            "location": "src/test/java/features/Free_magento_pages.feature:31"
+            "duration": 7.1663545,
+            "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:11"
           }
         ]
       }
     ]
   },
   {
-    "source": "^verify the ppt page$",
+    "source": "verify the Pop-up",
     "steps": [
       {
-        "name": "verify the ppt page",
+        "name": "verify the Pop-up",
         "aggregatedDurations": {
-          "average": 4.1078556,
-          "median": 4.1078556
+          "average": 10.7285795,
+          "median": 10.7285795
         },
         "durations": [
           {
-            "duration": 4.1078556,
-            "location": "src/test/java/features/sli_listing_page.feature:15"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Go to the listing page$",
-    "steps": [
-      {
-        "name": "Go to the listing page",
-        "aggregatedDurations": {
-          "average": 0.1068551,
-          "median": 0.1068551
-        },
-        "durations": [
-          {
-            "duration": 0.1068551,
-            "location": "src/test/java/features/sli_listing_page.feature:10"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^mouse hover on any of one pptsi$",
-    "steps": [
-      {
-        "name": "mouse hover on any of one pptsi",
-        "aggregatedDurations": {
-          "average": 3.4756816,
-          "median": 3.4756816
-        },
-        "durations": [
-          {
-            "duration": 3.4756816,
-            "location": "src/test/java/features/sli_listing_page.feature:25"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on any of one ppts$",
-    "steps": [
-      {
-        "name": "click on any of one ppts",
-        "aggregatedDurations": {
-          "average": 5.7800655,
-          "median": 5.7800655
-        },
-        "durations": [
-          {
-            "duration": 5.7800655,
-            "location": "src/test/java/features/Free_magento_pages.feature:17"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on any of page number and verify the listing page for free ppts$",
-    "steps": [
-      {
-        "name": "Click on any of page number and verify the listing page for free ppts",
-        "aggregatedDurations": {
-          "average": 6.03264,
-          "median": 6.03264
-        },
-        "durations": [
-          {
-            "duration": 6.03264,
-            "location": "src/test/java/features/Free_magento_pages.feature:28"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^verify the navigation on cottect ppt page$",
-    "steps": [
-      {
-        "name": "verify the navigation on cottect ppt page",
-        "aggregatedDurations": {
-          "average": 3.1176363,
-          "median": 3.1176363
-        },
-        "durations": [
-          {
-            "duration": 3.1176363,
-            "location": "src/test/java/features/Free_magento_pages.feature:18"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on any of ppt$",
-    "steps": [
-      {
-        "name": "click on any of ppt",
-        "aggregatedDurations": {
-          "average": 6.140923,
-          "median": 6.140923
-        },
-        "durations": [
-          {
-            "duration": 6.140923,
-            "location": "src/test/java/features/sli_listing_page.feature:14"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on Free Business PPTs under Free stuff$",
-    "steps": [
-      {
-        "name": "click on Free Business PPTs under Free stuff",
-        "aggregatedDurations": {
-          "average": 6.9016783,
-          "median": 6.9016783
-        },
-        "durations": [
-          {
-            "duration": 6.9016783,
-            "location": "src/test/java/features/Free_magento_pages.feature:14"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Mouse hover on any of one ppt and verify the pop-up$",
-    "steps": [
-      {
-        "name": "Mouse hover on any of one ppt and verify the pop-up",
-        "aggregatedDurations": {
-          "average": 3.6285444,
-          "median": 3.6285444
-        },
-        "durations": [
-          {
-            "duration": 3.6285444,
-            "location": "src/test/java/features/Free_magento_pages.feature:32"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Verify the navigation on correct ppt page$",
-    "steps": [
-      {
-        "name": "Verify the navigation on correct ppt page",
-        "aggregatedDurations": {
-          "average": 3.1121927,
-          "median": 3.1121927
-        },
-        "durations": [
-          {
-            "duration": 3.1121927,
-            "location": "src/test/java/features/Free_magento_pages.feature:30"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^mouse hover on any of one free ppt and verify the pop-up$",
-    "steps": [
-      {
-        "name": "mouse hover on any of one free ppt and verify the pop-up",
-        "aggregatedDurations": {
-          "average": 3.4497822,
-          "median": 3.4497822
-        },
-        "durations": [
-          {
-            "duration": 3.4497822,
-            "location": "src/test/java/features/Free_magento_pages.feature:10"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on Any of page number and verify the listing pagebelowi$",
-    "steps": [
-      {
-        "name": "click on Any of page number and verify the listing pagebelowi",
-        "aggregatedDurations": {
-          "average": 1.3052556,
-          "median": 1.3052556
-        },
-        "durations": [
-          {
-            "duration": 1.3052556,
-            "location": "src/test/java/features/sli_listing_page.feature:27"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on popular ppts$",
-    "steps": [
-      {
-        "name": "click on popular ppts",
-        "aggregatedDurations": {
-          "average": 3.6246961,
-          "median": 3.6246961
-        },
-        "durations": [
-          {
-            "duration": 3.6246961,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:9"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^verify the navigation on correct ppt page$",
-    "steps": [
-      {
-        "name": "verify the navigation on correct ppt page",
-        "aggregatedDurations": {
-          "average": 2.0967149,
-          "median": 2.0967149
-        },
-        "durations": [
-          {
-            "duration": 2.0967149,
-            "location": "src/test/java/features/Free_magento_pages.feature:13"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on any of one ppts$",
-    "steps": [
-      {
-        "name": "Click on any of one ppts",
-        "aggregatedDurations": {
-          "average": 5.6510259,
-          "median": 5.6510259
-        },
-        "durations": [
-          {
-            "duration": 5.6510259,
-            "location": "src/test/java/features/Free_magento_pages.feature:34"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on Free Ppts under Free Stuff$",
-    "steps": [
-      {
-        "name": "Click on Free Ppts under Free Stuff",
-        "aggregatedDurations": {
-          "average": 6.0851878,
-          "median": 6.0851878
-        },
-        "durations": [
-          {
-            "duration": 6.0851878,
-            "location": "src/test/java/features/Free_magento_pages.feature:26"
+            "duration": 10.7285795,
+            "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:13"
           }
         ]
       }
@@ -311,355 +41,13 @@
       {
         "name": "press escape key",
         "aggregatedDurations": {
-          "average": 2.1141639,
-          "median": 2.1141639
+          "average": 3.185804,
+          "median": 3.185804
         },
         "durations": [
           {
-            "duration": 2.1141639,
+            "duration": 3.185804,
             "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on popular ppts$",
-    "steps": [
-      {
-        "name": "Click on popular ppts",
-        "aggregatedDurations": {
-          "average": 5.4475864,
-          "median": 5.4475864
-        },
-        "durations": [
-          {
-            "duration": 5.4475864,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:20"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on Free PPts under Free Stuff$",
-    "steps": [
-      {
-        "name": "click on Free PPts under Free Stuff",
-        "aggregatedDurations": {
-          "average": 2.0073678,
-          "median": 2.0073678
-        },
-        "durations": [
-          {
-            "duration": 2.0073678,
-            "location": "src/test/java/features/Free_magento_pages.feature:9"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on Any of page number and verify the popular ppts$",
-    "steps": [
-      {
-        "name": "click on Any of page number and verify the popular ppts",
-        "aggregatedDurations": {
-          "average": 7.037552,
-          "median": 7.037552
-        },
-        "durations": [
-          {
-            "duration": 7.037552,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:12"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^verify the user will navigation on cottect ppt page$",
-    "steps": [
-      {
-        "name": "verify the user will navigation on cottect ppt page",
-        "aggregatedDurations": {
-          "average": 5.1181551,
-          "median": 5.1181551
-        },
-        "durations": [
-          {
-            "duration": 5.1181551,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:14"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User is on Home Page$",
-    "steps": [
-      {
-        "name": "User is on Home Page",
-        "aggregatedDurations": {
-          "average": 14.1624071,
-          "median": 14.1624071
-        },
-        "durations": [
-          {
-            "duration": 14.1624071,
-            "location": "src/test/java/features/sli_listing_page.feature:8"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on any of page number and verify the listing page for free ppts$",
-    "steps": [
-      {
-        "name": "click on any of page number and verify the listing page for free ppts",
-        "aggregatedDurations": {
-          "average": 6.943925,
-          "median": 6.943925
-        },
-        "durations": [
-          {
-            "duration": 6.943925,
-            "location": "src/test/java/features/Free_magento_pages.feature:11"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Mouse Hover on any of one free ppt and verify the pop-up$",
-    "steps": [
-      {
-        "name": "Mouse Hover on any of one free ppt and verify the pop-up",
-        "aggregatedDurations": {
-          "average": 3.5955974,
-          "median": 3.5955974
-        },
-        "durations": [
-          {
-            "duration": 3.5955974,
-            "location": "src/test/java/features/Free_magento_pages.feature:27"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on signin pageii$",
-    "steps": [
-      {
-        "name": "Click on signin pageii",
-        "aggregatedDurations": {
-          "average": 3.9446045,
-          "median": 3.9446045
-        },
-        "durations": [
-          {
-            "duration": 3.9446045,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:18"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "Enter data in search field",
-    "steps": [
-      {
-        "name": "Enter data in search field",
-        "aggregatedDurations": {
-          "average": 4.1556747,
-          "median": 4.1556747
-        },
-        "durations": [
-          {
-            "duration": 4.1556747,
-            "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:6"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on Sign out button and verify the pagei$",
-    "steps": [
-      {
-        "name": "click on Sign out button and verify the pagei",
-        "aggregatedDurations": {
-          "average": 4.1338631,
-          "median": 4.1338631
-        },
-        "durations": [
-          {
-            "duration": 4.1338631,
-            "location": "src/test/java/features/sli_listing_page.feature:30"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on signin page$",
-    "steps": [
-      {
-        "name": "Click on signin page",
-        "aggregatedDurations": {
-          "average": 4.9303345,
-          "median": 4.9303345
-        },
-        "durations": [
-          {
-            "duration": 4.9303345,
-            "location": "src/test/java/features/Free_magento_pages.feature:24"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Verify the navigation on cottect ppt page$",
-    "steps": [
-      {
-        "name": "Verify the navigation on cottect ppt page",
-        "aggregatedDurations": {
-          "average": 9.0256366,
-          "median": 9.0256366
-        },
-        "durations": [
-          {
-            "duration": 9.0256366,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:25"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on any of page number and verify the product below$",
-    "steps": [
-      {
-        "name": "click on any of page number and verify the product below",
-        "aggregatedDurations": {
-          "average": 0.8876477,
-          "median": 0.8876477
-        },
-        "durations": [
-          {
-            "duration": 0.8876477,
-            "location": "src/test/java/features/sli_listing_page.feature:13"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Enter username \"([^\"]*)\" and passwordi \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "Enter username \"nishadhiman0027@gmail.com\" and passwordi \"Qwerty@1\"",
-        "aggregatedDurations": {
-          "average": 14.8430171,
-          "median": 14.8430171
-        },
-        "durations": [
-          {
-            "duration": 14.8430171,
-            "location": "src/test/java/features/Free_magento_pages.feature:25"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User is on Home Pageii$",
-    "steps": [
-      {
-        "name": "User is on Home Pageii",
-        "aggregatedDurations": {
-          "average": 12.4081033,
-          "median": 12.4081033
-        },
-        "durations": [
-          {
-            "duration": 12.4081033,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:8"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on any of one ppt under free ppts$",
-    "steps": [
-      {
-        "name": "Click on any of one ppt under free ppts",
-        "aggregatedDurations": {
-          "average": 4.9756494,
-          "median": 4.9756494
-        },
-        "durations": [
-          {
-            "duration": 4.9756494,
-            "location": "src/test/java/features/Free_magento_pages.feature:29"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on signup page$",
-    "steps": [
-      {
-        "name": "Click on signup page",
-        "aggregatedDurations": {
-          "average": 3.9720944,
-          "median": 3.9720944
-        },
-        "durations": [
-          {
-            "duration": 3.9720944,
-            "location": "src/test/java/features/sli_listing_page.feature:21"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^User is on Home Pagei$",
-    "steps": [
-      {
-        "name": "User is on Home Pagei",
-        "aggregatedDurations": {
-          "average": 10.5734391,
-          "median": 10.5734391
-        },
-        "durations": [
-          {
-            "duration": 10.5734391,
-            "location": "src/test/java/features/Free_magento_pages.feature:8"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Verify the displayed pop-up is visibleii$",
-    "steps": [
-      {
-        "name": "Verify the displayed pop-up is visibleii",
-        "aggregatedDurations": {
-          "average": 3.0430115,
-          "median": 3.0430115
-        },
-        "durations": [
-          {
-            "duration": 3.0430115,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:22"
           }
         ]
       }
@@ -671,12 +59,12 @@
       {
         "name": "Now user is on Home Page",
         "aggregatedDurations": {
-          "average": 12.1050344,
-          "median": 12.1050344
+          "average": 11.2449015,
+          "median": 11.2449015
         },
         "durations": [
           {
-            "duration": 12.1050344,
+            "duration": 11.2449015,
             "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:5"
           }
         ]
@@ -684,378 +72,90 @@
     ]
   },
   {
-    "source": "^verify the navigation on cottect ppt pageii$",
+    "source": "verify the pop-up",
     "steps": [
       {
-        "name": "verify the navigation on cottect ppt pageii",
+        "name": "verify the pop-up",
         "aggregatedDurations": {
-          "average": 4.1228994,
-          "median": 4.1228994
+          "average": 4.1751634,
+          "median": 4.1751634
         },
         "durations": [
           {
-            "duration": 4.1228994,
-            "location": "src/test/java/features/sli_listing_page.feature:29"
+            "duration": 4.1751634,
+            "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:8"
           }
         ]
       }
     ]
   },
   {
-    "source": "^verify the whether the pop-up is visible$",
+    "source": "Enter free valid username and password",
     "steps": [
       {
-        "name": "verify the whether the pop-up is visible",
+        "name": "Enter free valid username and password",
         "aggregatedDurations": {
-          "average": 3.0554893,
-          "median": 3.0554893
+          "average": 4.5571939,
+          "median": 4.5571939
         },
         "durations": [
           {
-            "duration": 3.0554893,
-            "location": "src/test/java/features/sli_listing_page.feature:12"
+            "duration": 4.5571939,
+            "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:10"
           }
         ]
       }
     ]
   },
   {
-    "source": "^verify the whether the pop-up is visiblei$",
+    "source": "Enter data in search field",
     "steps": [
       {
-        "name": "verify the whether the pop-up is visiblei",
+        "name": "Enter data in search field",
         "aggregatedDurations": {
-          "average": 2.0546719,
-          "median": 2.0546719
+          "average": 3.8672378,
+          "median": 3.8672378
         },
         "durations": [
           {
-            "duration": 2.0546719,
-            "location": "src/test/java/features/sli_listing_page.feature:26"
+            "duration": 3.8672378,
+            "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:6"
           }
         ]
       }
     ]
   },
   {
-    "source": "^Enter keyword \"([^\"]*)\" in search fields$",
+    "source": "Press Escape key",
     "steps": [
       {
-        "name": "Enter keyword \"Management\" in search fields",
+        "name": "Press Escape key",
         "aggregatedDurations": {
-          "average": 3.1359216,
-          "median": 3.1359216
+          "average": 3.0995715,
+          "median": 3.0995715
         },
         "durations": [
           {
-            "duration": 3.1359216,
-            "location": "src/test/java/features/sli_listing_page.feature:23"
+            "duration": 3.0995715,
+            "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:12"
           }
         ]
       }
     ]
   },
   {
-    "source": "^Click on any of page number$",
+    "source": "Click on Sign in button",
     "steps": [
       {
-        "name": "Click on any of page number",
+        "name": "Click on Sign in button",
         "aggregatedDurations": {
-          "average": 3.3963587,
-          "median": 3.3963587
+          "average": 6.274393,
+          "median": 6.274393
         },
         "durations": [
           {
-            "duration": 3.3963587,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:23"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^mouse hover on any of one ppt and verify the pop-up$",
-    "steps": [
-      {
-        "name": "mouse hover on any of one ppt and verify the pop-up",
-        "aggregatedDurations": {
-          "average": 3.5506198,
-          "median": 3.5506198
-        },
-        "durations": [
-          {
-            "duration": 3.5506198,
-            "location": "src/test/java/features/Free_magento_pages.feature:15"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Enter username \"([^\"]*)\" and password \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "Enter username \"nishadhiman0027@gmail.com\" and password \"Qwerty@1\"",
-        "aggregatedDurations": {
-          "average": 5.7755476,
-          "median": 5.7755476
-        },
-        "durations": [
-          {
-            "duration": 5.7755476,
-            "location": "src/test/java/features/sli_listing_page.feature:22"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Go to the listing pagei$",
-    "steps": [
-      {
-        "name": "Go to the listing pagei",
-        "aggregatedDurations": {
-          "average": 0.1183976,
-          "median": 0.1183976
-        },
-        "durations": [
-          {
-            "duration": 0.1183976,
-            "location": "src/test/java/features/sli_listing_page.feature:24"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Verify the navigation on cottect ppt pageii$",
-    "steps": [
-      {
-        "name": "Verify the navigation on cottect ppt pageii",
-        "aggregatedDurations": {
-          "average": 9.7527514,
-          "median": 9.7527514
-        },
-        "durations": [
-          {
-            "duration": 9.7527514,
-            "location": "src/test/java/features/Free_magento_pages.feature:35"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on any of ppt$",
-    "steps": [
-      {
-        "name": "Click on any of ppt",
-        "aggregatedDurations": {
-          "average": 6.0984119,
-          "median": 6.0984119
-        },
-        "durations": [
-          {
-            "duration": 6.0984119,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:24"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Click on any of page numberii$",
-    "steps": [
-      {
-        "name": "Click on any of page numberii",
-        "aggregatedDurations": {
-          "average": 5.1939894,
-          "median": 5.1939894
-        },
-        "durations": [
-          {
-            "duration": 5.1939894,
-            "location": "src/test/java/features/Free_magento_pages.feature:33"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on any of page numberi$",
-    "steps": [
-      {
-        "name": "click on any of page numberi",
-        "aggregatedDurations": {
-          "average": 6.8880146,
-          "median": 6.8880146
-        },
-        "durations": [
-          {
-            "duration": 6.8880146,
-            "location": "src/test/java/features/Free_magento_pages.feature:16"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on any of ppti$",
-    "steps": [
-      {
-        "name": "click on any of ppti",
-        "aggregatedDurations": {
-          "average": 6.6276685,
-          "median": 6.6276685
-        },
-        "durations": [
-          {
-            "duration": 6.6276685,
-            "location": "src/test/java/features/sli_listing_page.feature:28"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Enter username \"([^\"]*)\" and passwordii \"([^\"]*)\"$",
-    "steps": [
-      {
-        "name": "Enter username \"nishadhiman0027@gmail.com\" and passwordii \"Qwerty@1\"",
-        "aggregatedDurations": {
-          "average": 5.7032787,
-          "median": 5.7032787
-        },
-        "durations": [
-          {
-            "duration": 5.7032787,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:19"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Mouse hover on any of one ppt$",
-    "steps": [
-      {
-        "name": "Mouse hover on any of one ppt",
-        "aggregatedDurations": {
-          "average": 0.4762493,
-          "median": 0.4762493
-        },
-        "durations": [
-          {
-            "duration": 0.4762493,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:21"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^mouse hover on any of one ppt$",
-    "steps": [
-      {
-        "name": "mouse hover on any of one ppt",
-        "aggregatedDurations": {
-          "average": 0.2519163,
-          "median": 0.2519163
-        },
-        "durations": [
-          {
-            "duration": 0.2519163,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:10"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^Enter keyword \"(.*)\" in search field$",
-    "steps": [
-      {
-        "name": "Enter keyword \"Progress\" in search field",
-        "aggregatedDurations": {
-          "average": 3.1422341,
-          "median": 3.1422341
-        },
-        "durations": [
-          {
-            "duration": 3.1422341,
-            "location": "src/test/java/features/sli_listing_page.feature:9"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on any of one ppt under free ppts$",
-    "steps": [
-      {
-        "name": "click on any of one ppt under free ppts",
-        "aggregatedDurations": {
-          "average": 6.0051923,
-          "median": 6.0051923
-        },
-        "durations": [
-          {
-            "duration": 6.0051923,
-            "location": "src/test/java/features/Free_magento_pages.feature:12"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^click on any of one Ppt$",
-    "steps": [
-      {
-        "name": "click on any of one Ppt",
-        "aggregatedDurations": {
-          "average": 4.6246662,
-          "median": 4.6246662
-        },
-        "durations": [
-          {
-            "duration": 4.6246662,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:13"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^mouse hover on any of one ppts$",
-    "steps": [
-      {
-        "name": "mouse hover on any of one ppts",
-        "aggregatedDurations": {
-          "average": 3.5628115,
-          "median": 3.5628115
-        },
-        "durations": [
-          {
-            "duration": 3.5628115,
-            "location": "src/test/java/features/sli_listing_page.feature:11"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^verify the displayed pop-up is visible$",
-    "steps": [
-      {
-        "name": "verify the displayed pop-up is visible",
-        "aggregatedDurations": {
-          "average": 3.0734009,
-          "median": 3.0734009
-        },
-        "durations": [
-          {
-            "duration": 3.0734009,
-            "location": "src/test/java/features/Paid_Manento_pages.feature:11"
+            "duration": 6.274393,
+            "location": "src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:9"
           }
         ]
       }

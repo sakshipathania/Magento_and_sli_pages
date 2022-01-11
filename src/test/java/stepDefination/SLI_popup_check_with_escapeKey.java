@@ -120,7 +120,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			WebElement search_field = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			search_field.sendKeys("Management");
-			Thread.sleep(4000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 
 		}

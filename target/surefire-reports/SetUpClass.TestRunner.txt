@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: SetUpClass.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 72, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 329.052 s <<< FAILURE! - in SetUpClass.TestRunner
-Then verify the pop-up(Scenario: SLI popup test with escape key)  Time elapsed: 0.005 s  <<< FAILURE!
-java.lang.AssertionError
-
-Scenario: SLI popup test with escape key  Time elapsed: 0.005 s  <<< FAILURE!
-java.lang.AssertionError
-
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 77.272 s - in SetUpClass.TestRunner
