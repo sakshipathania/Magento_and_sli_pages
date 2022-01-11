@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Project Name</td>
+                          <td>1</td>
+                        <td>11 Jan 2022, 11:20</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">Free_Magento_pages.Click_on_Free_Business_PPTs_under_Free_stuff()</td>
+                <td>1</td>
+                <td class="duration" data-value="7518998200">7s 518ms</td>
+                <td class="duration" data-value="7518998200">7s 518ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.Click_on_any_of_one_ppt_under_free_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="4975649400">4s 975ms</td>
+                <td class="duration" data-value="4975649400">4s 975ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.Click_on_any_of_one_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="5651025900">5s 651ms</td>
+                <td class="duration" data-value="5651025900">5s 651ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.Click_on_any_of_page_number_and_verify_the_listing_page_for_free_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="6032640000">6s 032ms</td>
+                <td class="duration" data-value="6032640000">6s 032ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.Mouse_hover_on_any_of_one_ppt_and_verify_the_pop_up()</td>
+                <td>1</td>
+                <td class="duration" data-value="3628544400">3s 628ms</td>
+                <td class="duration" data-value="3628544400">3s 628ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.Verify_the_navigation_on_correct_ppt_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="3112192700">3s 112ms</td>
+                <td class="duration" data-value="3112192700">3s 112ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.click_on_Free_Business_PPTs_under_Free_stuff()</td>
+                <td>1</td>
+                <td class="duration" data-value="6901678300">6s 901ms</td>
+                <td class="duration" data-value="6901678300">6s 901ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.click_on_Free_PPts_under_Free_Stuff()</td>
+                <td>1</td>
+                <td class="duration" data-value="2007367800">2s 007ms</td>
+                <td class="duration" data-value="2007367800">2s 007ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.click_on_Free_Ppts_under_Free_Stuff()</td>
+                <td>1</td>
+                <td class="duration" data-value="6085187800">6s 085ms</td>
+                <td class="duration" data-value="6085187800">6s 085ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.click_on_any_of_one_ppt_under_free_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="6005192300">6s 005ms</td>
+                <td class="duration" data-value="6005192300">6s 005ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.click_on_any_of_one_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="5780065500">5s 780ms</td>
+                <td class="duration" data-value="5780065500">5s 780ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.click_on_any_of_page_number_and_verify_the_listing_page_for_free_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="6943925000">6s 943ms</td>
+                <td class="duration" data-value="6943925000">6s 943ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.click_on_any_of_page_numberi()</td>
+                <td>1</td>
+                <td class="duration" data-value="6888014600">6s 888ms</td>
+                <td class="duration" data-value="6888014600">6s 888ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.click_on_any_of_page_numberii()</td>
+                <td>1</td>
+                <td class="duration" data-value="5193989400">5s 193ms</td>
+                <td class="duration" data-value="5193989400">5s 193ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.click_on_signin_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="4930334500">4s 930ms</td>
+                <td class="duration" data-value="4930334500">4s 930ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.enter_username_and_passwordi(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="14843017100">14s 843ms</td>
+                <td class="duration" data-value="14843017100">14s 843ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.mouse_Hover_on_any_of_one_free_ppt_and_verify_the_pop_up()</td>
+                <td>1</td>
+                <td class="duration" data-value="3595597400">3s 595ms</td>
+                <td class="duration" data-value="3595597400">3s 595ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.mouse_hover_on_any_of_one_free_ppt_and_verify_the_pop_up()</td>
+                <td>1</td>
+                <td class="duration" data-value="3449782200">3s 449ms</td>
+                <td class="duration" data-value="3449782200">3s 449ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.mouse_hover_on_any_of_one_ppt_and_verify_the_pop_up()</td>
+                <td>1</td>
+                <td class="duration" data-value="3550619800">3s 550ms</td>
+                <td class="duration" data-value="3550619800">3s 550ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.user_is_on_Home_Pagei()</td>
+                <td>1</td>
+                <td class="duration" data-value="10573439100">10s 573ms</td>
+                <td class="duration" data-value="10573439100">10s 573ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.verify_the_navigation_on_correct_ppt_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="2096714900">2s 096ms</td>
+                <td class="duration" data-value="2096714900">2s 096ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.verify_the_navigation_on_cottect_ppt_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="3117636300">3s 117ms</td>
+                <td class="duration" data-value="3117636300">3s 117ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Free_Magento_pages.verify_the_navigation_on_cottect_ppt_pageii()</td>
+                <td>1</td>
+                <td class="duration" data-value="9752751400">9s 752ms</td>
+                <td class="duration" data-value="9752751400">9s 752ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.Click_on_popular_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="5447586400">5s 447ms</td>
+                <td class="duration" data-value="5447586400">5s 447ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.Mouse_hover_on_any_of_one_ppt()</td>
+                <td>1</td>
+                <td class="duration" data-value="476249300">476ms</td>
+                <td class="duration" data-value="476249300">476ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.click_on_Any_of_page_number_and_verify_the_popular_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="7037552000">7s 037ms</td>
+                <td class="duration" data-value="7037552000">7s 037ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.click_on_any_of_one_Ppt()</td>
+                <td>1</td>
+                <td class="duration" data-value="4624666200">4s 624ms</td>
+                <td class="duration" data-value="4624666200">4s 624ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.click_on_any_of_page_number()</td>
+                <td>1</td>
+                <td class="duration" data-value="3396358700">3s 396ms</td>
+                <td class="duration" data-value="3396358700">3s 396ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.click_on_any_of_ppt()</td>
+                <td>1</td>
+                <td class="duration" data-value="6098411900">6s 098ms</td>
+                <td class="duration" data-value="6098411900">6s 098ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.click_on_popular_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="3624696100">3s 624ms</td>
+                <td class="duration" data-value="3624696100">3s 624ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.click_on_signin_pageii()</td>
+                <td>1</td>
+                <td class="duration" data-value="3944604500">3s 944ms</td>
+                <td class="duration" data-value="3944604500">3s 944ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.enter_username_and_passwordii(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="5703278700">5s 703ms</td>
+                <td class="duration" data-value="5703278700">5s 703ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.mouse_hover_on_any_of_one_ppt()</td>
+                <td>1</td>
+                <td class="duration" data-value="251916300">251ms</td>
+                <td class="duration" data-value="251916300">251ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.user_is_on_Home_Pageii()</td>
+                <td>1</td>
+                <td class="duration" data-value="12408103300">12s 408ms</td>
+                <td class="duration" data-value="12408103300">12s 408ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.verify_the_displayed_pop_up_is_visible()</td>
+                <td>1</td>
+                <td class="duration" data-value="3073400900">3s 073ms</td>
+                <td class="duration" data-value="3073400900">3s 073ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.verify_the_displayed_pop_up_is_visibleii()</td>
+                <td>1</td>
+                <td class="duration" data-value="3043011500">3s 043ms</td>
+                <td class="duration" data-value="3043011500">3s 043ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.verify_the_navigation_on_cottect_ppt_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="9025636600">9s 025ms</td>
+                <td class="duration" data-value="9025636600">9s 025ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Paid_magento_pages.verify_the_user_will_navigation_on_cottect_ppt_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="5118155100">5s 118ms</td>
+                <td class="duration" data-value="5118155100">5s 118ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SLI_popup_check_with_escapeKey.Now_user_is_on_home_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="12105034400">12s 105ms</td>
+                <td class="duration" data-value="12105034400">12s 105ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SLI_popup_check_with_escapeKey.click_on_sign_in_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SLI_popup_check_with_escapeKey.enter_data_in_Search_fields()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SLI_popup_check_with_escapeKey.enter_data_in_search_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="4155674700">4s 155ms</td>
+                <td class="duration" data-value="4155674700">4s 155ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SLI_popup_check_with_escapeKey.enter_free_valid_username_and_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SLI_popup_check_with_escapeKey.press_Escape_key()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SLI_popup_check_with_escapeKey.press_escape_key()</td>
+                <td>1</td>
+                <td class="duration" data-value="2114163900">2s 114ms</td>
+                <td class="duration" data-value="2114163900">2s 114ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SLI_popup_check_with_escapeKey.verify_the_Pop_up()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SLI_popup_check_with_escapeKey.verify_the_pop_up()</td>
+                <td>1</td>
+                <td class="duration" data-value="2073484400">2s 073ms</td>
+                <td class="duration" data-value="2073484400">2s 073ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.click_on_Any_of_page_number_and_verify_the_listing_pagebelow()</td>
+                <td>1</td>
+                <td class="duration" data-value="1305255600">1s 305ms</td>
+                <td class="duration" data-value="1305255600">1s 305ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.click_on_Sign_out_button_and_verify_the_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="4133863100">4s 133ms</td>
+                <td class="duration" data-value="4133863100">4s 133ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.click_on_any_of_page_number_and_verify_the_product_below()</td>
+                <td>1</td>
+                <td class="duration" data-value="887647700">887ms</td>
+                <td class="duration" data-value="887647700">887ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.click_on_any_of_ppt()</td>
+                <td>1</td>
+                <td class="duration" data-value="6140923000">6s 140ms</td>
+                <td class="duration" data-value="6140923000">6s 140ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.click_on_any_of_ppti()</td>
+                <td>1</td>
+                <td class="duration" data-value="6627668500">6s 627ms</td>
+                <td class="duration" data-value="6627668500">6s 627ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.click_on_signup_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="3972094400">3s 972ms</td>
+                <td class="duration" data-value="3972094400">3s 972ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.enter_keyword_in_search_field(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3142234100">3s 142ms</td>
+                <td class="duration" data-value="3142234100">3s 142ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.enter_keyword_in_search_fields(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3135921600">3s 135ms</td>
+                <td class="duration" data-value="3135921600">3s 135ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.enter_username_and_password(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="5775547600">5s 775ms</td>
+                <td class="duration" data-value="5775547600">5s 775ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.go_to_the_listing_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="106855100">106ms</td>
+                <td class="duration" data-value="106855100">106ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.go_to_the_listing_pagei()</td>
+                <td>1</td>
+                <td class="duration" data-value="118397600">118ms</td>
+                <td class="duration" data-value="118397600">118ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.mouse_hover_on_any_of_one_ppts()</td>
+                <td>1</td>
+                <td class="duration" data-value="3562811500">3s 562ms</td>
+                <td class="duration" data-value="3562811500">3s 562ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.mouse_hover_on_any_of_one_pptsi()</td>
+                <td>1</td>
+                <td class="duration" data-value="3475681600">3s 475ms</td>
+                <td class="duration" data-value="3475681600">3s 475ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.user_is_on_Home_Page()</td>
+                <td>1</td>
+                <td class="duration" data-value="14162407100">14s 162ms</td>
+                <td class="duration" data-value="14162407100">14s 162ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.verify_the_navigation_on_cottect_ppt_pageii()</td>
+                <td>1</td>
+                <td class="duration" data-value="4122899400">4s 122ms</td>
+                <td class="duration" data-value="4122899400">4s 122ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.verify_the_ppt_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="4107855600">4s 107ms</td>
+                <td class="duration" data-value="4107855600">4s 107ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.verify_the_whether_the_pop_up_is_visible()</td>
+                <td>1</td>
+                <td class="duration" data-value="3055489300">3s 055ms</td>
+                <td class="duration" data-value="3055489300">3s 055ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Sli_listing_pagination.verify_the_whether_the_pop_up_is_visiblei()</td>
+                <td>1</td>
+                <td class="duration" data-value="2054671900">2s 054ms</td>
+                <td class="duration" data-value="2054671900">2s 054ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">TakeImageStep.tearDown(Scenario)</td>
+                <td>7</td>
+                <td class="duration" data-value="391819400">391ms</td>
+                <td class="duration" data-value="55974200">055ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>66</td>
+              <td>72</td>
+              <td class="duration">4m 56s 636ms</td>
+              <td class="duration">4s 119ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
