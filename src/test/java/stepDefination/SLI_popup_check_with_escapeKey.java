@@ -46,12 +46,14 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	public void press_escape_key() throws Throwable {
 
 		try {
-			if (!driver.findElements(By.xpath("//ul[@id='sli_autocomplete']")).isEmpty()) {
-				pop_up_Value = wait
-						.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='sli_autocomplete']")))
-						.isDisplayed();
+
+			pop_up_Value = wait
+					.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='sli_autocomplete']")))
+					.isDisplayed();
+			if (pop_up_Value == true) {
+
 				System.out.println("pop-up is displayed  " + pop_up_Value);
-				assertTrue(pop_up_Value == true);
+
 				Robot robot = new Robot();
 				robot.keyPress(KeyEvent.VK_ESCAPE);
 				robot.keyRelease(KeyEvent.VK_ESCAPE);
@@ -59,6 +61,10 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 				robot.keyPress(KeyEvent.VK_ESCAPE);
 				robot.keyRelease(KeyEvent.VK_ESCAPE);
 				Thread.sleep(1000);
+			} else {
+
+				System.out.println("pop-up is not displayed  " + pop_up_Value);
+				assertTrue(pop_up_Value == false);
 			}
 		} catch (AWTException e) {
 		}
@@ -129,12 +135,14 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	@Then("Press Escape key")
 	public void press_Escape_key() throws Throwable {
 		try {
-			if (!driver.findElements(By.xpath("//ul[@id='sli_autocomplete']")).isEmpty()) {
-				pop_up_Value = wait
-						.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='sli_autocomplete']")))
-						.isDisplayed();
+
+			pop_up_Value = wait
+					.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='sli_autocomplete']")))
+					.isDisplayed();
+			if (pop_up_Value == true) {
+
 				System.out.println("pop-up is displayed  " + pop_up_Value);
-				assertTrue(pop_up_Value == true);
+
 				Robot robot = new Robot();
 				robot.keyPress(KeyEvent.VK_ESCAPE);
 				robot.keyRelease(KeyEvent.VK_ESCAPE);
@@ -142,10 +150,13 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 				robot.keyPress(KeyEvent.VK_ESCAPE);
 				robot.keyRelease(KeyEvent.VK_ESCAPE);
 				Thread.sleep(1000);
+			} else {
+
+				System.out.println("pop-up is not displayed  " + pop_up_Value);
+				assertTrue(pop_up_Value == false);
 			}
 		} catch (AWTException e) {
 		}
-
 	}
 
 	@Then("verify the Pop-up")

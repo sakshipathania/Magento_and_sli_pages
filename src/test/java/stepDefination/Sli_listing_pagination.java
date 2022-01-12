@@ -112,7 +112,7 @@ public class Sli_listing_pagination extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//div[@data-direct-url='https://www.slideteam.net/project-crowdfunding-process-for-start-up-company.html']")));
+					"//div[@data-direct-url='https://www.slideteam.net/project-tracking-with-assigned-and-deadline-date.html']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -129,7 +129,7 @@ public class Sli_listing_pagination extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Project Crowdfunding Process For Start Up Company"));
+					verify_ppt_page.contains("Project Tracking With Assigned And Deadline Date"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
@@ -252,7 +252,7 @@ public class Sli_listing_pagination extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//div[@data-direct-url='https://www.slideteam.net/programme-organization-assessment-training-programme-evaluation-information-system.html']")));
+					"//div[@data-direct-url='https://www.slideteam.net/project-portfolio-report-with-priority-and-completion-status.html']//img[@id='zoomImg']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -268,7 +268,7 @@ public class Sli_listing_pagination extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page", verify_ppt_page
-					.contains("Programme Organization Assessment Training Programme Evaluation Information System"));
+					.contains("Project Portfolio Report With Priority And Completion Status"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 

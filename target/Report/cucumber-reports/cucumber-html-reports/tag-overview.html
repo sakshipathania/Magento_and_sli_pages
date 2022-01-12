@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@Sli_test"],
+        labels: ["@Free_Magento_pages_test","@Paid_Magento_pages_test","@Sli_pagination_test","@Sli_test","@With_login","@without_Login"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [100.00]
+                data: [60.87, 100.00, 72.22, 33.33, 90.00, 57.69]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [0.00]
+                data: [4.35, 0.00, 11.11, 11.11, 3.33, 7.69]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [0.00]
+                data: [34.78, 0.00, 16.67, 55.56, 6.67, 34.62]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>11 Jan 2022, 13:57</td>
+                        <td>12 Jan 2022, 10:15</td>
           </tr>
         </tbody>
       </table>
@@ -192,50 +192,125 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="Sli_test.html">@Sli_test</a></td>
+        <td class="tagname"><a href="Free_Magento_pages_test.html">@Free_Magento_pages_test</a></td>
         
         <td  class="passed"    >1</td>
+        <td  class="failed"    >1</td>
+        <td class="total">2</td>
+        <td      class="passed"    >14</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >8</td>
         <td >0</td>
+        <td >0</td>
+        <td class="total">23</td>
+        <td class="duration" data-value="92220621500">1m 32s 220ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Paid_Magento_pages_test.html">@Paid_Magento_pages_test</a></td>
+        
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+        <td      class="passed"    >15</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">15</td>
+        <td class="duration" data-value="70276358600">1m 10s 276ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Sli_pagination_test.html">@Sli_pagination_test</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >2</td>
+        <td class="total">2</td>
+        <td      class="passed"    >13</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">18</td>
+        <td class="duration" data-value="120294551600">2m 294ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="Sli_test.html">@Sli_test</a></td>
+        
+        <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >3</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >5</td>
         <td >0</td>
         <td >0</td>
         <td class="total">9</td>
-        <td class="duration" data-value="54299199100">54s 299ms</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="20026375500">20s 026ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="With_login.html">@With_login</a></td>
+        
+        <td  class="passed"    >2</td>
+        <td  class="failed"    >1</td>
+        <td class="total">3</td>
+        <td      class="passed"    >27</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">30</td>
+        <td class="duration" data-value="172297982400">2m 52s 297ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="without_Login.html">@without_Login</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td  class="failed"    >2</td>
+        <td class="total">3</td>
+        <td      class="passed"    >15</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >9</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">26</td>
+        <td class="duration" data-value="110493549300">1m 50s 493ms</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>1</td>
-            <td>1</td>
+      <td>6</td>
+            <td>5</td>
+      <td>8</td>
+      <td>13</td>
+      <td>87</td>
+      <td>7</td>
+      <td>27</td>
       <td>0</td>
-      <td>1</td>
-      <td>9</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>9</td>
-      <td class="duration">54s 299ms</td>
+      <td>121</td>
+      <td class="duration">9m 45s 609ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
+            <td>38.46%</td>
+      <td>61.54%</td>
+      <td></td>
+      <td>71.90%</td>
+      <td>5.79%</td>
+      <td>22.31%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
       <td></td>
-      <td></td>
-      <td>0.00%</td>
+      <td>61.54%</td>
     </tr>
   </tfoot>
 </table>

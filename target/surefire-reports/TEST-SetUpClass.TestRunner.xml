@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="SetUpClass.TestRunner" time="77.272" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="SetUpClass.TestRunner" time="325.919" tests="72" errors="4" skipped="16" failures="4">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\SLIDE QA\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6521907069521435467.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\SLIDE QA\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10420267708268739403.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin/server;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.8.3\bin;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\Git\cmd;C:\Users\SLIDE QA\AppData\Local\Microsoft\WindowsApps;;C:\Windows\System32;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin/server;C:/Users/SLIDE QA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.8.3\bin;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\Git\cmd;C:\Users\SLIDE QA\AppData\Local\Microsoft\WindowsApps;;C:\Users\SLIDE QA\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,14 +60,158 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given Now user is on Home Page" classname="Scenario: SLI popup test with escape key" time="0.003"/>
+  <testcase name="Given User is on Home Pagei" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0.003"/>
+  <testcase name="Then click on Free PPts under Free Stuff" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0"/>
+  <testcase name="Then mouse hover on any of one free ppt and verify the pop-up" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0.006">
+    <failure message="pop-up is not visible" type="java.lang.AssertionError">java.lang.AssertionError: pop-up is not visible
+</failure>
+  </testcase>
+  <testcase name="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0.006">
+    <failure message="pop-up is not visible" type="java.lang.AssertionError">java.lang.AssertionError: pop-up is not visible
+</failure>
+  </testcase>
+  <testcase name="Then click on any of page number and verify the listing page for free ppts" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then click on any of one ppt under free ppts" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then verify the navigation on correct ppt page" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then click on Free Business PPTs under Free stuff" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then mouse hover on any of one ppt and verify the pop-up" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then click on any of page numberi" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then click on any of one ppts" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then verify the navigation on cottect ppt page" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test without log in" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then Click on signin page" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Enter username &quot;nishadhiman0027@gmail.com&quot; and passwordi &quot;Qwerty@1&quot;" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Click on Free Ppts under Free Stuff" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Mouse Hover on any of one free ppt and verify the pop-up" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Click on any of page number and verify the listing page for free ppts" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Click on any of one ppt under free ppts" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Verify the navigation on correct ppt page" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Click on Free Business PPTs under Free stuff" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Mouse hover on any of one ppt and verify the pop-up" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Click on any of page numberii" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Click on any of one ppts" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Then Verify the navigation on cottect ppt pageii" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0"/>
+  <testcase name="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" classname="Scenario: pagination &amp; Mouse Hovers on Free Magento pages test with log in" time="0.001"/>
+  <testcase name="Given User is on Home Pageii" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test without log in" time="0"/>
+  <testcase name="Then click on popular ppts" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test without log in" time="0"/>
+  <testcase name="Then mouse hover on any of one ppt" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test without log in" time="0"/>
+  <testcase name="Then verify the displayed pop-up is visible" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test without log in" time="0"/>
+  <testcase name="Then click on Any of page number and verify the popular ppts" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test without log in" time="0"/>
+  <testcase name="Then click on any of one Ppt" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test without log in" time="0"/>
+  <testcase name="Then verify the user will navigation on cottect ppt page" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test without log in" time="0"/>
+  <testcase name="Scenario: pagination &amp; Mouse Hovers on Magento pages test without log in" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test without log in" time="0.001"/>
+  <testcase name="Then Click on signin pageii" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" time="0"/>
+  <testcase name="Then Enter username &quot;nishadhiman0027@gmail.com&quot; and passwordii &quot;Qwerty@1&quot;" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" time="0"/>
+  <testcase name="Then Click on popular ppts" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" time="0"/>
+  <testcase name="Then Mouse hover on any of one ppt" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" time="0"/>
+  <testcase name="Then Verify the displayed pop-up is visibleii" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" time="0"/>
+  <testcase name="Then Click on any of page number" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" time="0"/>
+  <testcase name="Then Click on any of ppt" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" time="0"/>
+  <testcase name="Then Verify the navigation on cottect ppt page" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" time="0"/>
+  <testcase name="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" classname="Scenario: pagination &amp; Mouse Hovers on Magento pages test with log in" time="0.001"/>
+  <testcase name="Given Now user is on Home Page" classname="Scenario: SLI popup test with escape key" time="0"/>
   <testcase name="Then Enter data in search field" classname="Scenario: SLI popup test with escape key" time="0"/>
   <testcase name="Then press escape key" classname="Scenario: SLI popup test with escape key" time="0"/>
-  <testcase name="Then verify the pop-up" classname="Scenario: SLI popup test with escape key" time="0"/>
-  <testcase name="Then Click on Sign in button" classname="Scenario: SLI popup test with escape key" time="0"/>
-  <testcase name="And Enter free valid username and password" classname="Scenario: SLI popup test with escape key" time="0"/>
-  <testcase name="Then enter data in Search fields" classname="Scenario: SLI popup test with escape key" time="0"/>
-  <testcase name="Then Press Escape key" classname="Scenario: SLI popup test with escape key" time="0"/>
-  <testcase name="Then verify the Pop-up" classname="Scenario: SLI popup test with escape key" time="0"/>
-  <testcase name="Scenario: SLI popup test with escape key" classname="Scenario: SLI popup test with escape key" time="0.001"/>
+  <testcase name="Then verify the pop-up" classname="Scenario: SLI popup test with escape key" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[pop-up is displayed  true
+]]></system-out>
+  </testcase>
+  <testcase name="Scenario: SLI popup test with escape key" classname="Scenario: SLI popup test with escape key" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+  </testcase>
+  <testcase name="Then Click on Sign in button" classname="Scenario: SLI popup test with escape key" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And Enter free valid username and password" classname="Scenario: SLI popup test with escape key" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then enter data in Search fields" classname="Scenario: SLI popup test with escape key" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then Press Escape key" classname="Scenario: SLI popup test with escape key" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then verify the Pop-up" classname="Scenario: SLI popup test with escape key" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Given User is on Home Page" classname="Scenario: SLI pagination &amp; Mouse Hover test without log in" time="0"/>
+  <testcase name="Then Enter keyword &quot;Progress&quot; in search field" classname="Scenario: SLI pagination &amp; Mouse Hover test without log in" time="0"/>
+  <testcase name="Then Go to the listing page" classname="Scenario: SLI pagination &amp; Mouse Hover test without log in" time="0"/>
+  <testcase name="Then mouse hover on any of one ppts" classname="Scenario: SLI pagination &amp; Mouse Hover test without log in" time="0"/>
+  <testcase name="Then verify the whether the pop-up is visible" classname="Scenario: SLI pagination &amp; Mouse Hover test without log in" time="0"/>
+  <testcase name="Then click on any of page number and verify the product below" classname="Scenario: SLI pagination &amp; Mouse Hover test without log in" time="0"/>
+  <testcase name="Then click on any of ppt" classname="Scenario: SLI pagination &amp; Mouse Hover test without log in" time="0.001">
+    <error message="Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url=&apos;https://www.slideteam.net/project-crowdfunding-process-for-start-up-company.html&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url='https://www.slideteam.net/project-crowdfunding-process-for-start-up-company.html'] (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //div[@data-direct-url='https://www.slideteam.net/project-crowdfunding-process-for-start-up-company.html']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</error>
+  </testcase>
+  <testcase name="Scenario: SLI pagination &amp; Mouse Hover test without log in" classname="Scenario: SLI pagination &amp; Mouse Hover test without log in" time="0.001">
+    <error message="Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url=&apos;https://www.slideteam.net/project-crowdfunding-process-for-start-up-company.html&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url='https://www.slideteam.net/project-crowdfunding-process-for-start-up-company.html'] (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //div[@data-direct-url='https://www.slideteam.net/project-crowdfunding-process-for-start-up-company.html']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</error>
+  </testcase>
+  <testcase name="Then verify the ppt page" classname="Scenario: SLI pagination &amp; Mouse Hover test without log in" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then Click on signup page" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0"/>
+  <testcase name="Then Enter username &quot;nishadhiman0027@gmail.com&quot; and password &quot;Qwerty@1&quot;" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0"/>
+  <testcase name="Then Enter keyword &quot;Management&quot; in search fields" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0"/>
+  <testcase name="Then Go to the listing pagei" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0"/>
+  <testcase name="Then mouse hover on any of one pptsi" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0"/>
+  <testcase name="Then verify the whether the pop-up is visiblei" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0"/>
+  <testcase name="Then click on Any of page number and verify the listing pagebelowi" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0"/>
+  <testcase name="Then click on any of ppti" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0.001">
+    <error message="Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url=&apos;https://www.slideteam.net/programme-organization-assessment-training-programme-evaluation-information-system.html&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url='https://www.slideteam.net/programme-organization-assessment-training-programme-evaluation-information-system.html'] (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //div[@data-direct-url='https://www.slideteam.net/programme-organization-assessment-training-programme-evaluation-information-system.html']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</error>
+  </testcase>
+  <testcase name="Scenario: SLI pagination &amp; mouse Hover test with login" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0.001">
+    <error message="Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url=&apos;https://www.slideteam.net/programme-organization-assessment-training-programme-evaluation-information-system.html&apos;] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url='https://www.slideteam.net/programme-organization-assessment-training-programme-evaluation-information-system.html'] (tried for 30 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //div[@data-direct-url='https://www.slideteam.net/programme-organization-assessment-training-programme-evaluation-information-system.html']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+</error>
+  </testcase>
+  <testcase name="Then verify the navigation on cottect ppt pageii" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then click on Sign out button and verify the pagei" classname="Scenario: SLI pagination &amp; mouse Hover test with login" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>
