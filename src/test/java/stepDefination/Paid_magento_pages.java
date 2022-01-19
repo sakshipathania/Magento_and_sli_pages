@@ -64,11 +64,11 @@ public class Paid_magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip97339']")).getCssValue("display");
-
+			System.out.println("display= " + display);
 			// if block - visible if none - not visible
 			Assert.assertTrue("pop-up is not visible", display.equals("block"));
 
-			System.out.println("display= " + display);
+			
 		} catch (NoSuchElementException e) {
 
 		}
@@ -140,6 +140,8 @@ public class Paid_magento_pages extends BaseClass {
 	@Then("^Enter username \"([^\"]*)\" and passwordii \"([^\"]*)\"$")
 	public void enter_username_and_passwordii(String username, String password) throws Throwable {
 		try {
+			
+			Thread.sleep(3000);
 			WebElement email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
 			email.sendKeys(username);
 
@@ -187,10 +189,11 @@ public class Paid_magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip82604']")).getCssValue("display");
+			System.out.println("display= " + display);
 			// if block - visible if none - not visible
 			Assert.assertTrue("pop-up is not visible", display.equals("block"));
 
-			System.out.println("display= " + display);
+			
 		} catch (NoSuchElementException e) {
 
 		}

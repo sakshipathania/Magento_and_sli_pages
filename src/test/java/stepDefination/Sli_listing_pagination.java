@@ -75,10 +75,9 @@ public class Sli_listing_pagination extends BaseClass {
 			Thread.sleep(3000);
 			// to verify the pop-up
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip216672']")).getCssValue("display");
-
-			Assert.assertTrue("pop-up is not visible", display.equals("block"));
-
 			System.out.println("display= " + display);
+			
+			Assert.assertTrue("pop-up is not visible", display.equals("block"));		
 		} catch (NoSuchElementException e) {
 
 		}
@@ -215,10 +214,9 @@ public class Sli_listing_pagination extends BaseClass {
 			Thread.sleep(2000);
 			// to verify the pop-up
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip267023']")).getCssValue("display");
-
-			Assert.assertTrue("pop-up is not visible", display.equals("block"));
-
 			System.out.println("display= " + display);
+			
+			Assert.assertTrue("pop-up is not visible", display.equals("block"));		
 		} catch (NoSuchElementException e) {
 
 		}
@@ -248,11 +246,10 @@ public class Sli_listing_pagination extends BaseClass {
 
 	@Then("^click on any of ppti$")
 	public void click_on_any_of_ppti() throws Throwable {
-
 		try {
 			Thread.sleep(3000);
-			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//div[@data-direct-url='https://www.slideteam.net/project-portfolio-report-with-priority-and-completion-status.html']//img[@id='zoomImg']")));
+			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//div[@class = 'container listing-container sli_generic_container']//ul//li[4]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -263,12 +260,13 @@ public class Sli_listing_pagination extends BaseClass {
 	@Then("^verify the navigation on cottect ppt pageii$")
 	public void verify_the_navigation_on_cottect_ppt_pageii() throws Throwable {
 		try {
+			// verify that whether the download button is visible or not?
 			Thread.sleep(2000);
 			verify_ppt_page = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
+					.until(ExpectedConditions
+							.elementToBeClickable(By.xpath("//button[@class = 'btn btn-default get-button clicking']")))
 					.getText();
-			Assert.assertTrue("user is not on corect page", verify_ppt_page
-					.contains("Project Portfolio Report With Priority And Completion Status"));
+			Assert.assertTrue("Download button is not visible", verify_ppt_page.contains("Download this presentation"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 

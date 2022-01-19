@@ -50,6 +50,7 @@ public class Free_Magento_pages extends BaseClass {
 	public void mouse_hover_on_any_of_one_free_ppt_and_verify_the_pop_up() throws Throwable {
 		// select ppt under free stuff
 		try {
+			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//img[@title='Circular Flow Of Process 4 Stages Free PowerPoint Templates Slides']")));
 			Actions action = new Actions(driver);
@@ -59,12 +60,11 @@ public class Free_Magento_pages extends BaseClass {
 
 			// to verify the pop-up
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip15977']")).getCssValue("display");
+			
+			System.out.println("display= " + display);
 
 			Assert.assertTrue("pop-up is not visible", display.equals("block")); // if block - visible if none - not
 																					// visible
-
-			System.out.println("display= " + display);
-
 		} catch (NoSuchElementException e) {
 
 		}
@@ -139,6 +139,7 @@ public class Free_Magento_pages extends BaseClass {
 	@Then("^mouse hover on any of one ppt and verify the pop-up$")
 	public void mouse_hover_on_any_of_one_ppt_and_verify_the_pop_up() throws Throwable {
 		try {
+			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//img[@title='3d Puzzle Pieces In Line Powerpoint Presentation Slides']")));
 			Actions action = new Actions(driver);
@@ -148,10 +149,9 @@ public class Free_Magento_pages extends BaseClass {
 
 			// to verify the pop-up
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip13427']")).getCssValue("display");
-
-			Assert.assertTrue("pop-up is not visible", display.equals("block"));
-
 			System.out.println("display= " + display);
+			
+			Assert.assertTrue("pop-up is not visible", display.equals("block"));		
 
 		} catch (NoSuchElementException e) {
 
@@ -252,12 +252,10 @@ public class Free_Magento_pages extends BaseClass {
 			Thread.sleep(3000);
 			// to verify the pop-up
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip15977']")).getCssValue("display");
-
+			System.out.println("display= " + display);
+			
 			Assert.assertTrue("pop-up is not visible", display.equals("block")); // if block - visible if none - not
 																					// visible
-
-			System.out.println("display= " + display);
-
 		} catch (NoSuchElementException e) {
 
 		}
@@ -345,10 +343,9 @@ public class Free_Magento_pages extends BaseClass {
 		Thread.sleep(3000);
 		// to verify the pop-up
 		String display = driver.findElement(By.xpath("//div[@id = 'imgtip13427']")).getCssValue("display");
-
-		Assert.assertTrue("pop-up is not visible", display.equals("block"));
-
 		System.out.println("display= " + display);
+		
+		Assert.assertTrue("pop-up is not visible", display.equals("block"));		
 	}
 
 	@Then("^Click on any of page numberii$")

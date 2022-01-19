@@ -77,7 +77,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>12 Jan 2022, 10:15</td>
+                        <td>19 Jan 2022, 15:00</td>
           </tr>
         </tbody>
       </table>
@@ -148,7 +148,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Now user is on Home Page</span>
   
-  <span class="lead-duration duration">11s 763ms</span>
+  <span class="lead-duration duration">13s 870ms</span>
 
   </div>
 
@@ -169,7 +169,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Enter data in search field</span>
   
-  <span class="lead-duration duration">3s 117ms</span>
+  <span class="lead-duration duration">3s 190ms</span>
 
   </div>
 
@@ -190,7 +190,175 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">press escape key</span>
   
-  <span class="lead-duration duration">3s 107ms</span>
+  <span class="lead-duration duration">2s 121ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify the pop-up</span>
+  
+  <span class="lead-duration duration">5s 064ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">open Sli listing page and verify the pop-up</span>
+  
+  <span class="lead-duration duration">18s 376ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Click on Sign in button</span>
+  
+  <span class="lead-duration duration">6s 832ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter free valid username and password</span>
+  
+  <span class="lead-duration duration">20s 195ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">enter data in Search fields</span>
+  
+  <span class="lead-duration duration">6s 173ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Press Escape key</span>
+  
+  <span class="lead-duration duration">3s 075ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify the Pop-up</span>
+  
+  <span class="lead-duration duration">6s 139ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">open Sli listing pages and verify the pop-up</span>
+  
+  <span class="lead-duration duration">25s 447ms</span>
 
   </div>
 
@@ -209,9 +377,9 @@ $(document).ready(function() {
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify the pop-up</span>
+  <span class="name">Click on the sign out button</span>
   
-  <span class="lead-duration duration">2s 038ms</span>
+  <span class="lead-duration duration">39s 242ms</span>
 
   </div>
 
@@ -223,12 +391,67 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at stepDefination.SLI_popup_check_with_escapeKey.verify_the_pop_up(SLI_popup_check_with_escapeKey.java:81)
-	at ✽.Then verify the pop-up(src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:8)
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Sign Out (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at stepDefination.SLI_popup_check_with_escapeKey.click_on_the_sign_out_button(SLI_popup_check_with_escapeKey.java:290)
+	at ✽.Then Click on the sign out button(src/test/java/features/SLI_pop-up_Check_with_escape_key.feature:16)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.linkText: Sign Out
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'SLIDEQA2', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at stepDefination.SLI_popup_check_with_escapeKey.click_on_the_sign_out_button(SLI_popup_check_with_escapeKey.java:290)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 </pre>
       </div>
     </div>
@@ -241,119 +464,14 @@ $(document).ready(function() {
         
 
         
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Click on Sign in button</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">Enter free valid username and password</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">enter data in Search fields</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Press Escape key</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify the Pop-up</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
   <div class="embeddings inner-level">
                 <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-1841529365" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1983219255" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1841529365.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+      <a href="embeddings/embedding_-1983219255.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
     </div>
-    <div id="embedding_embedding_-1841529365" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-1841529365.png"></span>
+    <div id="embedding_embedding_-1983219255" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1983219255.png"></span>
     </div>
   </div>
         </div>
@@ -383,1061 +501,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">TakeImageStep.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">299ms</span>
-
-          </div>
-
-                      
-
-          
-          
-
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-      <div class="indention">
-      <a href="src-test-java-features-sli_listing_page-feature.html">View Feature</a> <i>SLI POP UP test</i>
-    </div>
-  
-  
-<div class="tags indention">
-       <a href="without_Login.html">@without_Login</a>
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">SLI pagination &amp; Mouse Hover test without log in</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-5" class="collapse collapsable-details  in ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">User is on Home Page</span>
-  
-  <span class="lead-duration duration">9s 664ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Enter keyword "Progress" in search field</span>
-  
-  <span class="lead-duration duration">3s 087ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Go to the listing page</span>
-  
-  <span class="lead-duration duration">101ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">mouse hover on any of one ppts</span>
-  
-  <span class="lead-duration duration">3s 355ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify the whether the pop-up is visible</span>
-  
-  <span class="lead-duration duration">3s 039ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on any of page number and verify the product below</span>
-  
-  <span class="lead-duration duration">792ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on any of ppt</span>
-  
-  <span class="lead-duration duration">40s 725ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
-          <a>Error message</a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url='https://www.slideteam.net/project-crowdfunding-process-for-start-up-company.html'] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at stepDefination.Sli_listing_pagination.click_on_any_of_ppt(Sli_listing_pagination.java:114)
-	at ✽.Then click on any of ppt(src/test/java/features/sli_listing_page.feature:14)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@data-direct-url='https://www.slideteam.net/project-crowdfunding-process-for-start-up-company.html']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at stepDefination.Sli_listing_pagination.click_on_any_of_ppt(Sli_listing_pagination.java:114)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify the ppt page</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  <div class="embeddings inner-level">
-                <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-1002007441" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1002007441.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
-    </div>
-    <div id="embedding_embedding_-1002007441" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-1002007441.png"></span>
-    </div>
-  </div>
-        </div>
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-8" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">TakeImageStep.tearDown(Scenario)</span>
-                        
-  <span class="lead-duration duration">230ms</span>
-
-          </div>
-
-                      
-
-          
-          
-
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-      <div class="indention">
-      <a href="src-test-java-features-sli_listing_page-feature.html">View Feature</a> <i>SLI POP UP test</i>
-    </div>
-  
-  
-<div class="tags indention">
-       <a href="With_login.html">@With_login</a>
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">SLI pagination &amp; mouse Hover test with login</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-9" class="collapse collapsable-details  in ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Click on signup page</span>
-  
-  <span class="lead-duration duration">3s 790ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Enter username "nishadhiman0027@gmail.com" and password "Qwerty@1"</span>
-  
-  <span class="lead-duration duration">5s 544ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Enter keyword "Management" in search fields</span>
-  
-  <span class="lead-duration duration">3s 102ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Go to the listing pagei</span>
-  
-  <span class="lead-duration duration">072ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">mouse hover on any of one pptsi</span>
-  
-  <span class="lead-duration duration">3s 062ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify the whether the pop-up is visiblei</span>
-  
-  <span class="lead-duration duration">2s 039ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on Any of page number and verify the listing pagebelowi</span>
-  
-  <span class="lead-duration duration">1s 210ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on any of ppti</span>
-  
-  <span class="lead-duration duration">40s 704ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
-          <a>Error message</a>
-      </div>
-      <div id="msg-11" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@data-direct-url='https://www.slideteam.net/programme-organization-assessment-training-programme-evaluation-information-system.html'] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at stepDefination.Sli_listing_pagination.click_on_any_of_ppti(Sli_listing_pagination.java:254)
-	at ✽.Then click on any of ppti(src/test/java/features/sli_listing_page.feature:28)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@data-direct-url='https://www.slideteam.net/programme-organization-assessment-training-programme-evaluation-information-system.html']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'SLIDEQA2', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at stepDefination.Sli_listing_pagination.click_on_any_of_ppti(Sli_listing_pagination.java:254)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify the navigation on cottect ppt pageii</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on Sign out button and verify the pagei</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  <div class="embeddings inner-level">
-                <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-1209372008" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1209372008.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
-    </div>
-    <div id="embedding_embedding_-1209372008" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-1209372008.png"></span>
-    </div>
-  </div>
-        </div>
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-12" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">TakeImageStep.tearDown(Scenario)</span>
-                        
-  <span class="lead-duration duration">287ms</span>
-
-          </div>
-
-                      
-
-          
-          
-
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-      <div class="indention">
-      <a href="src-test-java-features-Free_magento_pages-feature.html">View Feature</a> <i>pagination & Mouse Hovers on Free Magento pages</i>
-    </div>
-  
-  
-<div class="tags indention">
-       <a href="without_Login.html">@without_Login</a>
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">pagination &amp; Mouse Hovers on Free Magento pages test without log in</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-13" class="collapse collapsable-details  in ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">User is on Home Pagei</span>
-  
-  <span class="lead-duration duration">9s 636ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on Free PPts under Free Stuff</span>
-  
-  <span class="lead-duration duration">1s 684ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">mouse hover on any of one free ppt and verify the pop-up</span>
-  
-  <span class="lead-duration duration">3s 508ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
-          <a>Error message</a>
-      </div>
-      <div id="msg-15" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError: pop-up is not visible
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at stepDefination.Free_Magento_pages.mouse_hover_on_any_of_one_free_ppt_and_verify_the_pop_up(Free_Magento_pages.java:63)
-	at ✽.Then mouse hover on any of one free ppt and verify the pop-up(src/test/java/features/Free_magento_pages.feature:10)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on any of page number and verify the listing page for free ppts</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on any of one ppt under free ppts</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify the navigation on correct ppt page</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on Free Business PPTs under Free stuff</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">mouse hover on any of one ppt and verify the pop-up</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on any of page numberi</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">click on any of one ppts</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify the navigation on cottect ppt page</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  <div class="embeddings inner-level">
-                <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-2060569745" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-2060569745.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
-    </div>
-    <div id="embedding_embedding_-2060569745" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-2060569745.png"></span>
-    </div>
-  </div>
-        </div>
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-16" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">TakeImageStep.tearDown(Scenario)</span>
-                        
-  <span class="lead-duration duration">335ms</span>
+  <span class="lead-duration duration">406ms</span>
 
           </div>
 

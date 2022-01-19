@@ -107,13 +107,23 @@ public class BaseClass {
 				.withTimeout(Duration.ofSeconds(30)).ignoring(NoSuchElementException.class);
 		return wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
+	
+	public static WebElement precenceOfElement(By locator) {
+		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				// Check for condition in every 2 seconds
+				.pollingEvery(Duration.ofSeconds(2))
+				// Till time out i.e. 30 seconds
+				.withTimeout(Duration.ofSeconds(30)).ignoring(NoSuchElementException.class);
+		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+	}
+
 
 	@AfterClass
 	public static void after_Class() throws InterruptedException {
 		Thread.sleep(2000);
 
 		if (driver != null) {
-			driver.quit(); // ->> don't want to close the browser
+			//driver.quit(); // ->> don't want to close the browser
 			Thread.sleep(2000);
 		}
 
