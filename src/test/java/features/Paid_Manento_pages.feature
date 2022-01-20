@@ -1,5 +1,5 @@
 @Paid_Magento_pages_test
-Feature: pagination & Mouse Hovers on Magento pages
+Feature: pagination & Mouse Hovers on paid Magento pages
 
 
 
