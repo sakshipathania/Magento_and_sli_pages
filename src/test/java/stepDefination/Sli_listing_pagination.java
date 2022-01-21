@@ -44,6 +44,7 @@ public class Sli_listing_pagination extends BaseClass {
 	public void go_to_the_listing_page() throws Throwable {
 
 		try {
+			Thread.sleep(2000);
 			WebElement project_progress = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 					"//a[@data-suggested-term='project progress']//span[@class='highlight'][normalize-space()='progress']")));
 			project_progress.click();
