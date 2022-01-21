@@ -143,7 +143,7 @@ public class Sli_listing_pagination extends BaseClass {
 			WebElement sign_in = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Sign In']")));
 			//sign_in.click();
-			js.executeScript("arguments[0].click();", sign_in.click);
+			js.executeScript("arguments[0].click();", sign_in);
 		} catch (NoSuchElementException e) {
 
 		}
