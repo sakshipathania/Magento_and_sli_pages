@@ -112,7 +112,7 @@ public class Sli_listing_pagination extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//div[@data-direct-url='https://www.slideteam.net/project-tracking-with-assigned-and-deadline-date.html']")));
+					"//div[@class = 'container listing-container sli_generic_container']//ul//li[8]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -126,10 +126,10 @@ public class Sli_listing_pagination extends BaseClass {
 		try {
 			Thread.sleep(2000);
 			verify_ppt_page = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Project Tracking With Assigned And Deadline Date"));
+					verify_ppt_page.contains("Download this presentation"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
