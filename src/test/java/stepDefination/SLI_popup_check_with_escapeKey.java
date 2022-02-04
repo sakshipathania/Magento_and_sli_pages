@@ -156,7 +156,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	}
 
 	@Then("Enter free valid username and password")
-	public void enter_free_valid_username_and_password() {
+	public void enter_free_valid_username_and_password() throws Throwable {
 		try {
 			WebElement email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
 			email.sendKeys("nishadhiman0027@gmail.com");
@@ -166,6 +166,12 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			WebElement login_btn = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Login']")));
 			login_btn.click();
+			Thread.sleep(2000);
+			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
+				WebElement approve = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
+				approve.click();
+			}
 		} catch (NoSuchElementException e) {
 
 		}
