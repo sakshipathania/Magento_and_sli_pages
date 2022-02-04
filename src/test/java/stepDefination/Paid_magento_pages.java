@@ -152,6 +152,11 @@ public class Paid_magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Login']")));
 			login_btn.click();
 			Thread.sleep(2000);
+			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
+				WebElement approve = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
+				approve.click();
+			}
 		} catch (NoSuchElementException e) {
 
 		}
