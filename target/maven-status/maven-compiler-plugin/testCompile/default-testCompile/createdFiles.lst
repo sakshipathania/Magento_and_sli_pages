@@ -6,3 +6,4 @@ stepDefination\One_page_summery.class
 SetUpClass\TestRunner.class
 SetUpClass\BaseClass.class
 stepDefination\TakeImageStep.class
+stepDefination\Emarsys_Widgets_Pages.class
