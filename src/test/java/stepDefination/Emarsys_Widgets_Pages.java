@@ -9,7 +9,7 @@ import SetUpClass.BaseClass;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-public class Widgets_Pages extends BaseClass {
+public class Emarsys_Widgets_Pages extends BaseClass {
 
 	@Given("^Go to the Home page$")
 	public void go_to_the_Home_page() throws Throwable {
