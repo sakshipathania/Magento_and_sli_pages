@@ -12,4 +12,4 @@ Feature: Widgets Pages test
   Then navigate back to the home pagei
  Then select select any of one ppt from third row
  Then verify the download buttonii
-  Then navigate back to the home pageii
+ 
