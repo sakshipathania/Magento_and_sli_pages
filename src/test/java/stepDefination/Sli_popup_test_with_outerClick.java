@@ -45,14 +45,14 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			Thread.sleep(2000);
 			pop_up_Value = BaseClass.precenceOfElement(By.xpath("//ul[@id='sli_autocomplete']")).getCssValue("display");
 
-			System.out.println("pop-up value before pressing Escape key1 =  " + pop_up_Value);
+			System.out.println("pop-up value before clicking outer click1 =  " + pop_up_Value);
 			if (pop_up_Value.equals(pop_up_visible)) {
 
 				Actions action = new Actions(driver);
 				action.moveByOffset(0, 83).click().perform();
 			} else {
 
-				System.out.println("pop-up is not displayed before pressing Escape key1 " + pop_up_Value);
+				System.out.println("pop-up is not displayed before clicking outer click1 " + pop_up_Value);
 				assertTrue(pop_up_Value.equals(pop_up_visible));
 			}
 		} catch (NoSuchElementException e) {
@@ -64,7 +64,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			pop_up_Value = BaseClass.precenceOfElement(By.xpath("//ul[@id='sli_autocomplete']")).getCssValue("display");
-			System.out.println("pop-up is displayed after pressing Escape key1 " + pop_up_Value);
+			System.out.println("pop-up is displayed after clicking outer click1 " + pop_up_Value);
 			assertTrue(pop_up_Value.equals(pop_up_not_visible));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
@@ -98,7 +98,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			pop_up_Value = driver.findElement(By.xpath("//ul[@id='sli_autocomplete']"))
 					.getCssValue("display");
 			Thread.sleep(2000);
-			System.out.println("pop-up value before pressing Escape key2 =  " + pop_up_Value);
+			System.out.println("pop-up value before clicking outer click2 =  " + pop_up_Value);
 			if (pop_up_Value.equals(pop_up_visible)) {
 
 				Actions action = new Actions(driver);
@@ -107,7 +107,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 				
 			} else {
 
-				System.out.println("pop-up is not displayed before pressing Escape key2 " + pop_up_Value);
+				System.out.println("pop-up is not displayed before clicking outer click2 " + pop_up_Value);
 				assertTrue(pop_up_Value.equals(pop_up_visible));
 			}
 
@@ -116,7 +116,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			Thread.sleep(3000);
 			pop_up_Value = BaseClass.precenceOfElement(By.xpath("//ul[@id='sli_autocomplete']"))
 					.getCssValue("display");
-			System.out.println("pop-up is displayed after pressing Escape key2 " + pop_up_Value);
+			System.out.println("pop-up is displayed after clicking outer click2 " + pop_up_Value);
 			assertTrue(pop_up_Value.equals(pop_up_not_visible));
 			Thread.sleep(2000);
 
@@ -173,14 +173,14 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			pop_up_Value = BaseClass.precenceOfElement(By.xpath("//ul[@id='sli_autocomplete']")).getCssValue("display");
-			System.out.println("pop-up is not displayed before pressing Escape key3 " + pop_up_Value);
+			System.out.println("pop-up is not displayed before clicking outer click3 " + pop_up_Value);
 			if (pop_up_Value.equals(pop_up_visible)) {
 
 				Actions action = new Actions(driver);
 				action.moveByOffset(0, 83).click().perform();
 			} else {
 
-				System.out.println("pop-up is not displayed before pressing Escape key3 " + pop_up_Value);
+				System.out.println("pop-up is not displayed before clicking outer click3 " + pop_up_Value);
 				// condition failed with none and block value
 				assertTrue(pop_up_Value.equals(pop_up_visible));
 			}
@@ -193,7 +193,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			pop_up_Value = BaseClass.precenceOfElement(By.xpath("//ul[@id='sli_autocomplete']")).getCssValue("display");
-			System.out.println("pop-up is displayed after pressing Escape key3 " + pop_up_Value);
+			System.out.println("pop-up is displayed after clicking outer click3 " + pop_up_Value);
 			assertTrue(pop_up_Value.equals(pop_up_not_visible));
 
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
@@ -231,7 +231,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 
 			pop_up_Value = BaseClass.precenceOfElement(By.xpath("//ul[@id='sli_autocomplete']"))
 					.getCssValue("display");
-			System.out.println("pop-up value before pressing Escape key4 =  " + pop_up_Value);
+			System.out.println("pop-up value before clicking outer click4 =  " + pop_up_Value);
 			if (pop_up_Value.equals(pop_up_visible)) {
 
 				Actions action = new Actions(driver);
@@ -240,7 +240,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 
 			} else {
 
-				System.out.println("pop-up is not displayed before pressing Escape key4 " + pop_up_Value);
+				System.out.println("pop-up is not displayed before clicking outer click4 " + pop_up_Value);
 				assertTrue(pop_up_Value.equals(pop_up_visible));
 			}
 
@@ -249,7 +249,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			Thread.sleep(3000);
 			pop_up_Value = driver.findElement(By.xpath("//ul[@id='sli_autocomplete']"))
 					.getCssValue("display");
-			System.out.println("pop-up is displayed after pressing Escape key4 " + pop_up_Value);
+			System.out.println("pop-up is displayed after clicking outer click4 " + pop_up_Value);
 			assertTrue(pop_up_Value.equals(pop_up_not_visible));
 			Thread.sleep(4000);
 
