@@ -7,6 +7,6 @@ Feature: Widgets Pages test
   Then select any of one PPT
   Then verify the download button
   Then navigate back to the home page
-  Then select select any of one ppt from second row
+  Then select any of one ppt from second row
   Then verify the download buttoni
 
