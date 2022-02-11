@@ -93,7 +93,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			search_field.sendKeys("Software");
 			Thread.sleep(3000);
 
-			// Pressed ESC key after pop-up is visible else script got failed
+			// Pressed outside click after pop-up is visible else script got failed
 
 			pop_up_Value = driver.findElement(By.xpath("//ul[@id='sli_autocomplete']"))
 					.getCssValue("display");
@@ -111,7 +111,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 				assertTrue(pop_up_Value.equals(pop_up_visible));
 			}
 
-			// verify the pop-up should not visible after pressing Escape key
+			// verify the pop-up should not visible after clicking outside click
 
 			Thread.sleep(3000);
 			pop_up_Value = BaseClass.precenceOfElement(By.xpath("//ul[@id='sli_autocomplete']"))
