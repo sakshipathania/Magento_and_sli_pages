@@ -1,5 +1,5 @@
 @one_page_summary
-Feature: POP UP test for one page summary
+Feature: Test for one page summary
 
   Scenario: POP UP test for one page summary
   Given User is on Home Pages
