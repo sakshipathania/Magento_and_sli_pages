@@ -10,6 +10,12 @@ Feature: Widgets Pages test
   Then select select any of one ppt from second row
   Then verify the download buttoni
   Then navigate back to the home pagei
+<<<<<<< HEAD
   Then select select any of one ppt from third row
   Then verify the download buttonii
   Then navigate back to the home pageii
+=======
+ Then select select any of one ppt from third row
+ Then verify the download buttonii
+ 
+>>>>>>> 0ba56f413d15a3484d31ff3c15c290829c705821
