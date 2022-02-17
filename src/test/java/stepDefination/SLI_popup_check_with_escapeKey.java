@@ -102,9 +102,9 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			// Clear the search field and enter "Management" on sli listing page
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			search_field.clear();
-			search_field.sendKeys("So");
-			search_field.sendKeys("ftware");
-			Thread.sleep(2000);
+			search_field.sendKeys("Software");
+			//search_field.sendKeys("ftware");
+			Thread.sleep(4000);
 
 			// Pressed ESC key after pop-up is visible else script got failed
 
