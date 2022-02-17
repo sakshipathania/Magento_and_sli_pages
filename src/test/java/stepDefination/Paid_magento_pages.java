@@ -231,7 +231,7 @@ public class Paid_magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Company Profiling Powerpoint Presentation Slides']")));
+					By.xpath("//img[@title='Process Scope Powerpoint Template']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -247,7 +247,7 @@ public class Paid_magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Company Profiling Powerpoint Presentation Slides"));
+					verify_ppt_page.contains("Process Scope Powerpoint Template"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e1) {
 
