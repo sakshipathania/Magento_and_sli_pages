@@ -91,7 +91,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			search_field.clear();
 			search_field.sendKeys("Software");
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 
 			// Pressed outside click after pop-up is visible else script got failed
 
