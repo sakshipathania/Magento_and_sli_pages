@@ -28,8 +28,8 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	public void Now_user_is_on_home_page() throws Throwable {
 
 		log.info("It's opening the website URL");
-		Thread.sleep(2000);
 		driver.get(AppURL);
+		Thread.sleep(5000);
 		BaseClass.ClearBrowserCache();
 	}
 
