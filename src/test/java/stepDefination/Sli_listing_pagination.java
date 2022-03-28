@@ -274,7 +274,7 @@ public class Sli_listing_pagination extends BaseClass {
 					.until(ExpectedConditions
 							.elementToBeClickable(By.xpath("//button[@class = 'btn btn-default get-button clicking']")))
 					.getText();
-			Assert.assertTrue("Download button is not visible", verify_ppt_page.contains("Download this presentation"));
+			Assert.assertTrue("Download button is not visible", verify_ppt_page.contains("Download This Brochure"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
