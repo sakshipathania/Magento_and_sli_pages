@@ -162,11 +162,12 @@ public class Sli_listing_pagination extends BaseClass {
 			WebElement login_btn = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Login']")));
 			login_btn.click();
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
+				Thread.sleep(5000);
 			}
 
 		} catch (NoSuchElementException e) {
