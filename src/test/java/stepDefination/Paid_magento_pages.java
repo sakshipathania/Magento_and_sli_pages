@@ -151,11 +151,12 @@ public class Paid_magento_pages extends BaseClass {
 			WebElement login_btn = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Login']")));
 			login_btn.click();
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 				approve.click();
+				Thread.sleep(5000);
 			}
 		} catch (NoSuchElementException e) {
 
@@ -166,7 +167,7 @@ public class Paid_magento_pages extends BaseClass {
 	public void Click_on_popular_ppts() throws Throwable {
 		// click on Popular ppts after login
 		try {
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 			popular_Ppts = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Popular PPTs")));
 			popular_Ppts.click();
 		} catch (NoSuchElementException e) {
