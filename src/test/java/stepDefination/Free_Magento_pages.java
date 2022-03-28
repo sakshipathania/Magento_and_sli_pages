@@ -240,6 +240,7 @@ public class Free_Magento_pages extends BaseClass {
 			action.moveToElement(free_Stuff).perform();
 			free_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Samples']")));
 			action.moveToElement(free_ppt).click().perform();
+			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
 		}
