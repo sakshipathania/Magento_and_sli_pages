@@ -14,7 +14,6 @@ public class Emarsys_Widgets_Pages extends BaseClass {
 	@Given("^Go to the Home page$")
 	public void go_to_the_Home_page() throws Throwable {
 		driver.get(AppURL);
-		driver.navigate().refresh();
 		log.info("It's opening the website URL");
 		BaseClass.ClearBrowserCache();
 	}
