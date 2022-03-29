@@ -94,9 +94,9 @@ public class BaseClass {
 	public static void ClearBrowserCache() throws Throwable {
 
 		driver.manage().deleteAllCookies();
-		Thread.sleep(4000); // wait 4 seconds to clear cookies.
+		Thread.sleep(2000); // wait 4 seconds to clear cookies.
 		driver.navigate().refresh();
-		Thread.sleep(2000);
+		
 	}
 
 	public static WebElement elementToBeClickable(By locator) {
