@@ -62,7 +62,7 @@ public class BaseClass {
 			options.addArguments("--incognito"); // DesiredCapabilities object
 			DesiredCapabilities c = DesiredCapabilities.chrome(); // set capability to
 			c.setCapability(ChromeOptions.CAPABILITY, options);
-
+                        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 			driver = new ChromeDriver(options);
 
 			driver.manage().window().maximize();
