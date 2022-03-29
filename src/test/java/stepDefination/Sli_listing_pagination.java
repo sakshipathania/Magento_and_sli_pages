@@ -129,7 +129,7 @@ public class Sli_listing_pagination extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Download this presentation"));
+					verify_ppt_page.contains("Download This Document"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
