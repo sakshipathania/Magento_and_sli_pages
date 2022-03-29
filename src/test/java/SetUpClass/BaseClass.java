@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Properties;
-
+import org.openqa.selenium.PageLoadStrategy;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
