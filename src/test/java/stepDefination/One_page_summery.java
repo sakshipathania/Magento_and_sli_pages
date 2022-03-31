@@ -35,7 +35,7 @@ public class One_page_summery extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			WebElement select_A4_page = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(
-					"img[title='Business Executive Summary Report Presentation Report Infographic PPT PDF Document']")));
+					"img[title='Business executive summary report presentation report infographic ppt pdf document']")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_A4_page);
 			action.moveToElement(select_A4_page).perform();
