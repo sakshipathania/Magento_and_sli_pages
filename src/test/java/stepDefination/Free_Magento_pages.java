@@ -52,7 +52,7 @@ public class Free_Magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[title='Circular flow of process 4 stages free powerpoint templates slides']")));
+					By.xpath("//img[@title='Circular flow of process 4 stages free powerpoint templates slides']")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
@@ -250,7 +250,7 @@ public class Free_Magento_pages extends BaseClass {
 	public void mouse_Hover_on_any_of_one_free_ppt_and_verify_the_pop_up() throws Throwable {
 		try {
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[title='Circular flow of process 4 stages free powerpoint templates slides']")));
+					By.xpath("//img[@title='Circular flow of process 4 stages free powerpoint templates slides']")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
