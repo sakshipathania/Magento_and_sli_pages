@@ -311,7 +311,7 @@ public class Free_Magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("//img[@title='Branding and marketing powerpoint icon c"));
+					verify_ppt_page.contains("Branding and marketing powerpoint icon c"));
 		} catch (NoSuchElementException e) {
 
 		}
