@@ -48,7 +48,7 @@ public class Paid_magento_pages extends BaseClass {
 
 		try {
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Change Management Powerpoint Presentation Slides']")));
+					By.xpath("//img[@title='Change management powerpoint presentation slides']")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
@@ -102,7 +102,7 @@ public class Paid_magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Competitive Analysis Template 5 Comparison Table Powerpoint Guide']")));
+					By.xpath("//img[@title='Competitive analysis template 5 comparison table powerpoint guide']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -118,7 +118,7 @@ public class Paid_magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Competitive Analysis Template 5 Comparison Table Powerpoint Guide"));
+					verify_ppt_page.contains("Competitive analysis template 5 comparison table powerpoint guide"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
@@ -180,7 +180,7 @@ public class Paid_magento_pages extends BaseClass {
 
 		try {
 			select_ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//img[@title='Business Process Evaluation Powerpoint Show']")));
+					.elementToBeClickable(By.xpath("//img[@title='Business process evaluation powerpoint show']")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
@@ -232,7 +232,7 @@ public class Paid_magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Process Scope Powerpoint Template']")));
+					By.xpath("//img[@title='Process scope powerpoint template']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -248,7 +248,7 @@ public class Paid_magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Process Scope Powerpoint Template"));
+					verify_ppt_page.contains("Process scope powerpoint template"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e1) {
 
