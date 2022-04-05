@@ -56,15 +56,15 @@ public class BaseClass {
 
 		if ((local_chrome.equals("yes"))) {
 			WebDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();
+			/*ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
 
 			options.addArguments("--incognito"); // DesiredCapabilities object
 			DesiredCapabilities c = DesiredCapabilities.chrome(); // set capability to
 			c.setCapability(ChromeOptions.CAPABILITY, options);
                         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-			driver = new ChromeDriver(options);
-
+			driver = new ChromeDriver(options);*/
+                        driver = new ChromeDriver();
 			driver.manage().window().maximize();
 
 			driver.get(AppURL);
