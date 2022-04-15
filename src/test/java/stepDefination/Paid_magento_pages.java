@@ -48,7 +48,7 @@ public class Paid_magento_pages extends BaseClass {
 
 		try {
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Change management powerpoint presentation slides']")));
+					By.xpath("//img[@title='Change Management Powerpoint Presentation Slides']")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
