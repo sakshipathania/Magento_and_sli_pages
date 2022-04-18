@@ -76,7 +76,11 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 	public void open_Sli_listing_page_and_verify_the_popup() throws Throwable {
 		try {
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
+			Thread.sleep(2000);
+
 			search_field.clear();
+			Thread.sleep(2000);
+
 			search_field.sendKeys("HR");
 			Thread.sleep(4000);
 
@@ -209,7 +213,11 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 	public void open_Sli_listing_pages_and_verify_the_pop_up() throws Throwable {
 		try {
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
+			Thread.sleep(2000);
+
 			search_field.clear();
+			Thread.sleep(2000);
+
 			search_field.sendKeys("Management");
 			Thread.sleep(2000);
 
