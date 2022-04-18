@@ -88,6 +88,8 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	public void open_Sli_the_listing_page_and_verify_the_popup() throws Throwable {
 		try {
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
+			Thread.sleep(2000);
+
 			search_field.clear();
 			search_field.sendKeys("HR");
 			Thread.sleep(4000);
@@ -229,7 +231,11 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	public void open_Sli_listing_pages_and_verify_the_popup() throws Throwable {
 		try {
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
+			Thread.sleep(2000);
+
 			search_field.clear();
+			Thread.sleep(2000);
+
 			search_field.sendKeys("Management");
 			Thread.sleep(2000);
 
