@@ -78,7 +78,10 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			Thread.sleep(2000);
 
-			search_field.clear();
+		        search_field.sendKeys(Keys.CONTROL + "a");
+		        search_field.sendKeys(Keys.DELETE);
+		        Thread.sleep(3000);
+
 			Thread.sleep(2000);
 
 			search_field.sendKeys("HR");
@@ -93,7 +96,10 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 
 			// Clear the search field and enter "Management" on sli listing page
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
-			search_field.clear();
+			search_field.sendKeys(Keys.CONTROL + "a");
+		        search_field.sendKeys(Keys.DELETE);
+		        Thread.sleep(3000);
+
 			search_field.sendKeys("Software");
 			Thread.sleep(4000);
 
@@ -133,7 +139,10 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 	public void click_on_Signin_button() throws Throwable {
 		try {
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
-			search_field.clear();
+		        search_field.sendKeys(Keys.CONTROL + "a");
+		        search_field.sendKeys(Keys.DELETE);
+		        Thread.sleep(3000);
+
 			Thread.sleep(2000);
 			WebElement sign_In = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Sign In']")));
@@ -201,8 +210,11 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			assertTrue(pop_up_Value.equals(pop_up_not_visible));
 
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
-			search_field.clear();
-			Thread.sleep(3000);
+		        search_field.sendKeys(Keys.CONTROL + "a");
+		        search_field.sendKeys(Keys.DELETE);
+		        Thread.sleep(3000);
+
+			
 
 		} catch (NoSuchElementException e) {
 
@@ -215,7 +227,10 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			Thread.sleep(2000);
 
-			search_field.clear();
+			search_field.sendKeys(Keys.CONTROL + "a");
+		        search_field.sendKeys(Keys.DELETE);
+		        Thread.sleep(3000);
+
 			Thread.sleep(2000);
 
 			search_field.sendKeys("Management");
