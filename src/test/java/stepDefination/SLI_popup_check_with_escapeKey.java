@@ -241,8 +241,9 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			Thread.sleep(2000);
 
-			search_field.clear();
-			Thread.sleep(2000);
+			search_field.sendKeys(Keys.CONTROL + "a");
+		        search_field.sendKeys(Keys.DELETE);
+		        Thread.sleep(4000);
 
 			search_field.sendKeys("Management");
 			Thread.sleep(2000);
