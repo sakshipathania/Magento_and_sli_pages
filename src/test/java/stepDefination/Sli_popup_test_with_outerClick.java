@@ -246,7 +246,10 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 			// Clear the search field and enter "Management" on sli listing page
 			Thread.sleep(2000);
 			search_field = BaseClass.elementToBeClickable(By.xpath("//input[@id='search']"));
-			search_field.clear();
+		        search_field.sendKeys(Keys.CONTROL + "a");
+		        search_field.sendKeys(Keys.DELETE);
+		        Thread.sleep(3000);
+
 			search_field.sendKeys("HR");
 			Thread.sleep(4000);
 
