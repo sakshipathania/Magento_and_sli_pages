@@ -44,7 +44,7 @@ public class Emarsys_Widgets_Pages extends BaseClass {
 		try {
 			Thread.sleep(4000);
 			String verify_ppt_page = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='clicking']"))).getText();
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']"))).getText();
 			Assert.assertTrue("user is not on corect page", verify_ppt_page.contains("Download this presentation"));
 
 		} catch (NoSuchElementException e) {
