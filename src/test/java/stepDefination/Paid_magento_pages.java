@@ -104,7 +104,7 @@ public class Paid_magento_pages extends BaseClass {
 			String url = driver.getCurrentUrl();
 			String URL = "https://www.slideteam.net/professional-powerpoint-templates?p=2";
 			if (URL.equals(url)) {
-				Thread.sleep(8000);
+				Thread.sleep(10000);
 
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//img[@title='Competitive analysis template 5 comparison table powerpoint guide']")));
@@ -252,8 +252,7 @@ public class Paid_magento_pages extends BaseClass {
 			String url = driver.getCurrentUrl();
 			String URL = "https://www.slideteam.net/professional-powerpoint-templates?p=2";
 			if (URL.equals(url)) {
-				Thread.sleep(8000);
-
+				Thread.sleep(10000);
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//img[@title='Process scope powerpoint template']")));
 			        select_ppt.click();
