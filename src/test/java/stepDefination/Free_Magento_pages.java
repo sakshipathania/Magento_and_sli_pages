@@ -447,7 +447,8 @@ public class Free_Magento_pages extends BaseClass {
 			if (URL.equals(url)) {
 				Thread.sleep(10000);
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//img[@title='Convenience services examples ppt powerpoint presentation gallery slide cpb']")));
+					"ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Belarus map with flag colour']")));
+		                select_ppt.click();")));
 			        select_ppt.click();
 				break;
 			}
@@ -476,7 +477,7 @@ public class Free_Magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page", verify_ppt_page
-					.contains("Convenience services examples ppt powerpoint presentation gallery slide cpb"));
+					.contains("Belarus map with flag colour"));
 
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e1) {
