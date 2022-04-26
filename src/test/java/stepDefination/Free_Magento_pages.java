@@ -74,8 +74,8 @@ public class Free_Magento_pages extends BaseClass {
 	@Then("^click on any of page number and verify the listing page for free ppts$")
 	public void click_on_any_of_page_number_and_verify_the_listing_page_for_free_ppts() throws Throwable {
 		Thread.sleep(3000);
-		// click on 3rd page
-		page_number = wait.until(ExpectedConditions
+		// click on 2nd page
+		/*page_number = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[3]//a[1]//span[2]")));
 		pageNumber = page_number.getText();
 		page_number.click();
@@ -86,7 +86,26 @@ public class Free_Magento_pages extends BaseClass {
 		System.out.println("Total product on " + pageNumber + "rd page = " + productSize.size());
 
 		product_size = productSize.size();
-		Assert.assertTrue("No product is displayed", product_size > 0);
+		Assert.assertTrue("No product is displayed", product_size > 0);*/
+		
+		//code for infinite scrolling
+		
+		for (int second = 0;; second++) {
+			if (second >= 30) {
+				break;
+			}
+			js.executeScript("window.scrollBy(0,1200)", "");
+			Thread.sleep(3000);
+			String url = driver.getCurrentUrl();
+			String URL = "https://www.slideteam.net/share-and-download-products/?p=2";
+			if (URL.equals(url)) {
+				Thread.sleep(8000);
+
+				driver.findElement(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")).click();
+				break;
+			}
+
+		}
 
 	}
 
@@ -163,7 +182,7 @@ public class Free_Magento_pages extends BaseClass {
 	public void click_on_any_of_page_numberi() throws Throwable {
 		Thread.sleep(3000);
 		// click on 4th page
-		page_number = wait.until(ExpectedConditions
+		/*page_number = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[4]//a[1]//span[2]")));
 		pageNumber = page_number.getText();
 		page_number.click();
@@ -174,7 +193,26 @@ public class Free_Magento_pages extends BaseClass {
 		System.out.println("Total product on " + pageNumber + "th page = " + productSize.size());
 
 		product_size = productSize.size();
-		Assert.assertTrue("No product is displayed", product_size > 0);
+		Assert.assertTrue("No product is displayed", product_size > 0);*/
+		
+		//code for infinite scrolling, clicking on page 2
+		
+		for (int second = 0;; second++) {
+			if (second >= 30) {
+				break;
+			}
+			js.executeScript("window.scrollBy(0,1200)", "");
+			Thread.sleep(3000);
+			String url = driver.getCurrentUrl();
+			String URL = "https://www.slideteam.net/free-business-powerpoint-templates/?p=2";
+			if (URL.equals(url)) {
+				Thread.sleep(8000);
+
+				driver.findElement(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")).click();
+				break;
+			}
+
+		}
 	}
 
 	@Then("^click on any of one ppts$")
@@ -270,7 +308,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^Click on any of page number and verify the listing page for free ppts$")
 	public void Click_on_any_of_page_number_and_verify_the_listing_page_for_free_ppts() throws Throwable {
-		try {
+		/*try {
 			Thread.sleep(3000);
 			// click on 2rd page
 			page_number = wait.until(ExpectedConditions
@@ -286,6 +324,24 @@ public class Free_Magento_pages extends BaseClass {
 			product_size = productSize.size();
 			Assert.assertTrue("No product is displayed", product_size > 0);
 		} catch (NoSuchElementException e) {
+
+		}*/
+		
+		// code for infinite scrolling
+		for (int second = 0;; second++) {
+			if (second >= 30) {
+				break;
+			}
+			js.executeScript("window.scrollBy(0,1200)", "");
+			Thread.sleep(3000);
+			String url = driver.getCurrentUrl();
+			String URL = "https://www.slideteam.net/share-and-download-products/?p=2";
+			if (URL.equals(url)) {
+				Thread.sleep(8000);
+
+				driver.findElement(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")).click();
+				break;
+			}
 
 		}
 	}
@@ -356,7 +412,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^Click on any of page numberii$")
 	public void click_on_any_of_page_numberii() throws Throwable {
-		try {
+		/*try {
 			Thread.sleep(3000);
 			// click on 5th page
 			page_number = wait.until(ExpectedConditions
@@ -372,6 +428,25 @@ public class Free_Magento_pages extends BaseClass {
 			product_size = productSize.size();
 			Assert.assertTrue("No product is displayed", product_size > 0);
 		} catch (NoSuchElementException e) {
+
+		}*/
+		
+		//code for infinite scrolling, clicking on page 2
+		
+		for (int second = 0;; second++) {
+			if (second >= 30) {
+				break;
+			}
+			js.executeScript("window.scrollBy(0,1200)", "");
+			Thread.sleep(3000);
+			String url = driver.getCurrentUrl();
+			String URL = "https://www.slideteam.net/free-business-powerpoint-templates/?p=2";
+			if (URL.equals(url)) {
+				Thread.sleep(8000);
+
+				driver.findElement(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")).click();
+				break;
+			}
 
 		}
 	}
