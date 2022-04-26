@@ -446,9 +446,7 @@ public class Free_Magento_pages extends BaseClass {
 			String URL = "https://www.slideteam.net/free-business-powerpoint-templates/?p=2";
 			if (URL.equals(url)) {
 				Thread.sleep(10000);
-				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Belarus map with flag colour']")));
-		                select_ppt.click();")));
+			        select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Belarus map with flag colour']")));
 			        select_ppt.click();
 				break;
 			}
