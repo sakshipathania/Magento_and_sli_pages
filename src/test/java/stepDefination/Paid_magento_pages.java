@@ -76,7 +76,7 @@ public class Paid_magento_pages extends BaseClass {
 
 	@Then("^click on Any of page number and verify the popular ppts$")
 	public void click_on_Any_of_page_number_and_verify_the_popular_ppts() throws Throwable {
-		try {
+		/*try {
 			Thread.sleep(3000);
 			// click on 3rd page
 			page_number = wait.until(ExpectedConditions
@@ -93,13 +93,32 @@ public class Paid_magento_pages extends BaseClass {
 			Assert.assertTrue("No product is displayed", product_size > 0);
 		} catch (NoSuchElementException e) {
 
+		}*/
+		
+		for (int second = 0;; second++) {
+			if (second >= 30) {
+				break;
+			}
+			js.executeScript("window.scrollBy(0,1200)", "");
+			Thread.sleep(3000);
+			String url = driver.getCurrentUrl();
+			String URL = "https://www.slideteam.net/professional-powerpoint-templates?p=2";
+			if (URL.equals(url)) {
+				Thread.sleep(8000);
+
+				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//img[@title='Competitive analysis template 5 comparison table powerpoint guide']")));
+                                select_ppt.click();
+				break;
+			}
+
 		}
 
 	}
 
 	@Then("^click on any of one Ppt$")
 	public void click_on_any_of_one_Ppt() throws Throwable {
-		try {
+		/*try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//img[@title='Competitive analysis template 5 comparison table powerpoint guide']")));
@@ -107,7 +126,7 @@ public class Paid_magento_pages extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}
+		}*/
 	}
 
 	@Then("^verify the user will navigation on cottect ppt page$")
@@ -208,7 +227,7 @@ public class Paid_magento_pages extends BaseClass {
 	@Then("^Click on any of page number$")
 	public void click_on_any_of_page_number() throws Throwable {
 		// click on 4th page
-		try {
+		/*try {
 			page_number = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[4]//a[1]//span[2]")));
 			pageNumber = page_number.getText();
@@ -223,13 +242,31 @@ public class Paid_magento_pages extends BaseClass {
 			Assert.assertTrue("No product is displayed", product_size > 0);
 		} catch (NoSuchElementException e) {
 
+		}*/
+		for (int second = 0;; second++) {
+			if (second >= 30) {
+				break;
+			}
+			js.executeScript("window.scrollBy(0,1200)", "");
+			Thread.sleep(3000);
+			String url = driver.getCurrentUrl();
+			String URL = "https://www.slideteam.net/professional-powerpoint-templates?p=2";
+			if (URL.equals(url)) {
+				Thread.sleep(8000);
+
+				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//img[@title='Process scope powerpoint template']")));
+			        select_ppt.click();
+				break;
+			}
+
 		}
 	}
 
 	@Then("^Click on any of ppt$")
 	public void click_on_any_of_ppt() throws Throwable {
 
-		try {
+		/*try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//img[@title='Process scope powerpoint template']")));
@@ -237,7 +274,7 @@ public class Paid_magento_pages extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}
+		}*/
 	}
 
 	@Then("^Verify the navigation on cottect ppt page$")
