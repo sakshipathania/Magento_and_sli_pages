@@ -99,8 +99,7 @@ public class Free_Magento_pages extends BaseClass {
 			String url = driver.getCurrentUrl();
 			String URL = "https://www.slideteam.net/share-and-download-products/?p=2";
 			if (URL.equals(url)) {
-				Thread.sleep(8000);
-
+				Thread.sleep(10000);
 				 select_ppt = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")));
 			         select_ppt.click();
@@ -208,8 +207,7 @@ public class Free_Magento_pages extends BaseClass {
 			String url = driver.getCurrentUrl();
 			String URL = "https://www.slideteam.net/free-business-powerpoint-templates/?p=2";
 			if (URL.equals(url)) {
-				Thread.sleep(8000);
-
+				Thread.sleep(10000);
 				select_ppt = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Belarus map with flag colour']")));
 		                select_ppt.click();
@@ -341,8 +339,7 @@ public class Free_Magento_pages extends BaseClass {
 			String url = driver.getCurrentUrl();
 			String URL = "https://www.slideteam.net/share-and-download-products/?p=2";
 			if (URL.equals(url)) {
-				Thread.sleep(8000);
-
+				Thread.sleep(10000);
 				select_ppt = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//img[@title='Branding and marketing powerpoint icon c']")));
 			        select_ppt.click();
@@ -448,8 +445,7 @@ public class Free_Magento_pages extends BaseClass {
 			String url = driver.getCurrentUrl();
 			String URL = "https://www.slideteam.net/free-business-powerpoint-templates/?p=2";
 			if (URL.equals(url)) {
-				Thread.sleep(8000);
-
+				Thread.sleep(10000);
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 					"//img[@title='Convenience services examples ppt powerpoint presentation gallery slide cpb']")));
 			        select_ppt.click();
