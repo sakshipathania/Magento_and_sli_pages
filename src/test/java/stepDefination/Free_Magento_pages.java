@@ -101,8 +101,10 @@ public class Free_Magento_pages extends BaseClass {
 			if (URL.equals(url)) {
 				Thread.sleep(8000);
 
-				driver.findElement(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")).click();
-				break;
+				 select_ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")));
+			         select_ppt.click();
+			      break;
 			}
 
 		}
@@ -111,7 +113,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^click on any of one ppt under free ppts$")
 	public void click_on_any_of_one_ppt_under_free_ppts() throws Throwable {
-		try {
+		/*try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")));
@@ -119,7 +121,7 @@ public class Free_Magento_pages extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}
+		}*/
 	}
 
 	@Then("^verify the navigation on correct ppt page$")
@@ -208,7 +210,9 @@ public class Free_Magento_pages extends BaseClass {
 			if (URL.equals(url)) {
 				Thread.sleep(8000);
 
-				driver.findElement(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")).click();
+				select_ppt = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Belarus map with flag colour']")));
+		                select_ppt.click();
 				break;
 			}
 
@@ -217,11 +221,11 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^click on any of one ppts$")
 	public void click_on_any_of_one_ppts() throws Throwable {
-		Thread.sleep(3000);
+		/*Thread.sleep(3000);
 		select_ppt = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Belarus map with flag colour']")));
 		js.executeScript("arguments[0].scrollIntoView();", select_ppt);
-		select_ppt.click();
+		select_ppt.click();*/
 	}
 
 	@Then("^verify the navigation on cottect ppt page$")
@@ -339,7 +343,9 @@ public class Free_Magento_pages extends BaseClass {
 			if (URL.equals(url)) {
 				Thread.sleep(8000);
 
-				driver.findElement(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")).click();
+				select_ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//img[@title='Branding and marketing powerpoint icon c']")));
+			        select_ppt.click();
 				break;
 			}
 
@@ -348,7 +354,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^Click on any of one ppt under free ppts$")
 	public void Click_on_any_of_one_ppt_under_free_ppts() throws Throwable {
-		try {
+		/*try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//img[@title='Branding and marketing powerpoint icon c']")));
@@ -356,7 +362,7 @@ public class Free_Magento_pages extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}
+		}*/
 	}
 
 	@Then("^Verify the navigation on correct ppt page$")
@@ -444,7 +450,9 @@ public class Free_Magento_pages extends BaseClass {
 			if (URL.equals(url)) {
 				Thread.sleep(8000);
 
-				driver.findElement(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")).click();
+				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+					"//img[@title='Convenience services examples ppt powerpoint presentation gallery slide cpb']")));
+			        select_ppt.click();
 				break;
 			}
 
@@ -453,7 +461,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^Click on any of one ppts$")
 	public void Click_on_any_of_one_ppts() throws Throwable {
-		try {
+		/*try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 					"//img[@title='Convenience services examples ppt powerpoint presentation gallery slide cpb']")));
@@ -461,7 +469,7 @@ public class Free_Magento_pages extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}
+		}*/
 	}
 
 	@Then("^Verify the navigation on cottect ppt pageii$")
