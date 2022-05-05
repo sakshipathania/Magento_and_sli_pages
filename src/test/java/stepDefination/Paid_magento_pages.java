@@ -107,7 +107,7 @@ public class Paid_magento_pages extends BaseClass {
 				Thread.sleep(10000);
 
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Competitive analysis template 5 comparison table powerpoint guide']")));
+					By.xpath("//div[4]/div[2]/ol[1]/li[1]/div[1]/a[1]/img[1]")));
                                 select_ppt.click();
 				break;
 			}
@@ -137,7 +137,7 @@ public class Paid_magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Competitive analysis template 5 comparison table powerpoint guide"));
+					verify_ppt_page.contains("Career 10 minutes self introduction ppt powerpoint presentation slides example"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
@@ -199,7 +199,7 @@ public class Paid_magento_pages extends BaseClass {
 
 		try {
 			select_ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//img[@title='Business process evaluation powerpoint show']")));
+					.elementToBeClickable(By.xpath("//img[@title='Strategy action plan mission corporate strategy competitive strategy']")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
@@ -213,7 +213,7 @@ public class Paid_magento_pages extends BaseClass {
 	public void verify_the_displayed_pop_up_is_visibleii() throws Throwable {
 		try {
 			Thread.sleep(3000);
-			String display = driver.findElement(By.xpath("//div[@id = 'imgtip82604']")).getCssValue("display");
+			String display = driver.findElement(By.xpath("//div[@id = 'imgtip141385']")).getCssValue("display");
 			System.out.println("display= " + display);
 			// if block - visible if none - not visible
 			Assert.assertTrue("pop-up is not visible", display.equals("block"));
@@ -268,7 +268,7 @@ public class Paid_magento_pages extends BaseClass {
 		/*try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Process scope powerpoint template']")));
+					By.xpath("//img[@title='Strategic Management Planning Process Powerpoint Presentation Slides']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -284,7 +284,7 @@ public class Paid_magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Process scope powerpoint template"));
+					verify_ppt_page.contains("Strategic Management Planning Process Powerpoint Presentation Slides"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e1) {
 
