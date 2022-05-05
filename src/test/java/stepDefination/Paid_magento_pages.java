@@ -254,7 +254,7 @@ public class Paid_magento_pages extends BaseClass {
 			if (URL.equals(url)) {
 				Thread.sleep(10000);
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Process scope powerpoint template']")));
+					By.xpath("//img[@title='Strategic Management Planning Process Powerpoint Presentation Slides']")));
 			        select_ppt.click();
 				break;
 			}
