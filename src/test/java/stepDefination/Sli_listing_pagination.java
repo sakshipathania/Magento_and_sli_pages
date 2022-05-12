@@ -124,7 +124,7 @@ public class Sli_listing_pagination extends BaseClass {
 		}*/
 
 		// provide direct url here
-		driver.get(https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process);
+		driver.get("https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process");
 			   Thread.sleep(5000);
 
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
@@ -293,7 +293,7 @@ public class Sli_listing_pagination extends BaseClass {
 
 		}*/
 		
-		driver.get(https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process);
+		driver.get("https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process");
 			        Thread.sleep(5000);
 
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
