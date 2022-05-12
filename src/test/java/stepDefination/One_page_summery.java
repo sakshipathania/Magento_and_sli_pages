@@ -26,7 +26,7 @@ public class One_page_summery extends BaseClass {
 	@Then("^Click on the one page summery text in left navigation bar$")
 	public void click_on_the_one_page_summery_text_in_left_navigation_bar() throws Throwable {
 		WebElement one_Page_Summary = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//h3[normalize-space()='One Pagers']")));
+				.until(ExpectedConditions.elementToBeClickable(By.linkText("One Pagers")));
 		one_Page_Summary.click();
 	}
 
