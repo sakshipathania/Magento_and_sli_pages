@@ -105,7 +105,8 @@ public class Sli_listing_pagination extends BaseClass {
 
 		}*/
 		
-		for (int second = 0;; second++) {
+		// infinite scrolling
+		/*for (int second = 0;; second++) {
 			
 			js.executeScript("window.scrollBy(0,1200)", "");
 			Thread.sleep(3000);
@@ -120,8 +121,15 @@ public class Sli_listing_pagination extends BaseClass {
 				break;
 			}
 
-		}
+		}*/
 
+		// provide direct url here
+		driver.get(https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process);
+			   Thread.sleep(5000);
+
+				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//div[@class = 'container listing-container sli_generic_container']//ul//li[7]")));
+                                select_ppt.click();
 	}
 
 	@Then("^click on any of ppt$")
@@ -268,7 +276,7 @@ public class Sli_listing_pagination extends BaseClass {
 
 		}*/
 		
-		for (int second = 0;; second++) {
+		/*for (int second = 0;; second++) {
 			
 			js.executeScript("window.scrollBy(0,1200)", "");
 			Thread.sleep(3000);
@@ -283,7 +291,14 @@ public class Sli_listing_pagination extends BaseClass {
 				break;
 			}
 
-		}
+		}*/
+		
+		driver.get(https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process);
+			        Thread.sleep(5000);
+
+				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//div[@class = 'container listing-container sli_generic_container']//ul//li[7]")));
+                                select_ppt.click();
 	}
 
 	@Then("^click on any of ppti$")
