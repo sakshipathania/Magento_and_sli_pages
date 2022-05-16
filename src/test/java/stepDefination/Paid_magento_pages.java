@@ -199,7 +199,7 @@ public class Paid_magento_pages extends BaseClass {
 
 		try {
 			select_ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//img[@title='Strategy action plan mission corporate strategy competitive strategy']")));
+					.elementToBeClickable(By.xpath("//div[4]/div[1]/ol[1]/li[1]/div[1]/a[1]/img[1]")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
