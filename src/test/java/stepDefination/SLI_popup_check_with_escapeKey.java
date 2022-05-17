@@ -30,6 +30,8 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 		log.info("It's opening the website URL");
 		driver.get(AppURL);
 		Thread.sleep(3000);
+		driver.navigate().refresh(); // time out exception there that is why adding refresh 
+		Thread.sleep(3000);
 		BaseClass.ClearBrowserCache();
 	}
 
