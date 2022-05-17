@@ -34,6 +34,7 @@ public class Free_Magento_pages extends BaseClass {
 	public void click_on_Free_PPts_under_Free_Stuff() throws Throwable {
 		// click on free stuff without login
 		try {
+			Thread.sleep(3000);
 			free_Stuff = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']")));
 			Actions action = new Actions(driver);
@@ -126,7 +127,7 @@ public class Free_Magento_pages extends BaseClass {
 	@Then("^verify the navigation on correct ppt page$")
 	public void verify_the_navigation_on_correct_ppt_page() throws Throwable {
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			verify_ppt_page = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
@@ -142,7 +143,7 @@ public class Free_Magento_pages extends BaseClass {
 	public void click_on_Free_Business_PPTs_under_Free_stuff() throws Throwable {
 		// click on free Business PPts without login
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			free_Stuff = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//a[@class='menu-link'][normalize-space()='Free Stuff']")));
 			Actions action = new Actions(driver);
@@ -159,13 +160,13 @@ public class Free_Magento_pages extends BaseClass {
 	@Then("^mouse hover on any of one ppt and verify the pop-up$")
 	public void mouse_hover_on_any_of_one_ppt_and_verify_the_pop_up() throws Throwable {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//img[@title='3d puzzle pieces in line powerpoint presentation slides']")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 
 			// to verify the pop-up
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip13427']")).getCssValue("display");
@@ -207,7 +208,7 @@ public class Free_Magento_pages extends BaseClass {
 			String url = driver.getCurrentUrl();
 			String URL = "https://www.slideteam.net/free-business-powerpoint-templates/?p=2";
 			if (URL.equals(url)) {
-				Thread.sleep(4000);
+				Thread.sleep(9000);
 				select_ppt = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Belarus map with flag colour']")));
 		                select_ppt.click();
@@ -228,7 +229,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^verify the navigation on cottect ppt page$")
 	public void verify_the_navigation_on_cottect_ppt_page() throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		verify_ppt_page = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 				.getText();
@@ -237,7 +238,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^Click on signin page$")
 	public void click_on_signin_page() throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		WebElement sign_in = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Sign In']")));
 		sign_in.click();
@@ -245,7 +246,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^Enter username \"([^\"]*)\" and passwordi \"([^\"]*)\"$")
 	public void enter_username_and_passwordi(String username, String password) throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		try {
 			WebElement email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
 			email.sendKeys(username);
@@ -253,12 +254,12 @@ public class Free_Magento_pages extends BaseClass {
 			WebElement password_field = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//fieldset[@class='fieldset login']//input[@id='pass']")));
 			password_field.sendKeys(password);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 
 			WebElement login_btn = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Login']")));
 			login_btn.click();
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
@@ -273,14 +274,14 @@ public class Free_Magento_pages extends BaseClass {
 	public void click_on_Free_Ppts_under_Free_Stuff() throws Throwable {
 		// click on free stuff after login
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 			free_Stuff = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']")));
 			Actions action = new Actions(driver);
 			action.moveToElement(free_Stuff).perform();
 			free_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Samples']")));
 			action.moveToElement(free_ppt).click().perform();
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 		} catch (NoSuchElementException e) {
 
 		}
@@ -295,7 +296,7 @@ public class Free_Magento_pages extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
 
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 			// to verify the pop-up
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip15977']")).getCssValue("display");
 			System.out.println("display= " + display);
@@ -365,7 +366,7 @@ public class Free_Magento_pages extends BaseClass {
 	@Then("^Verify the navigation on correct ppt page$")
 	public void Verify_the_navigation_on_correct_ppt_page() throws Throwable {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 			verify_ppt_page = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
@@ -380,12 +381,12 @@ public class Free_Magento_pages extends BaseClass {
 	public void Click_on_Free_Business_PPTs_under_Free_stuff() throws Throwable {
 		// click on free Business PPTs after login
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			free_Stuff = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']")));
 			Actions action = new Actions(driver);
 			action.moveToElement(free_Stuff).perform();
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			business_ppt = BaseClass.elementToBeClickable(By.xpath("//a[@title='Free Business PPTs']"));
 			action.moveToElement(business_ppt).click().perform();
 		} catch (NoSuchElementException e) {
@@ -470,20 +471,20 @@ public class Free_Magento_pages extends BaseClass {
 	@Then("^Verify the navigation on cottect ppt pageii$")
 	public void verify_the_navigation_on_cottect_ppt_pageii() throws Throwable {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 			verify_ppt_page = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page", verify_ppt_page
 					.contains("Belarus map with flag colour"));
 
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 		} catch (NoSuchElementException e1) {
 
 		}
 		// sign out from the application
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			WebElement sign_Out = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign Out")));
 			sign_Out.click();
 		} catch (NoSuchElementException e) {
