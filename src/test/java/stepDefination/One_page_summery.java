@@ -39,7 +39,7 @@ public class One_page_summery extends BaseClass {
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_A4_page);
 			action.moveToElement(select_A4_page).perform();
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 
 			// to verify the pop-up
 			String display = driver.findElement(By.xpath("//div[@id = 'imgtip11']")).getCssValue("display");
@@ -55,7 +55,7 @@ public class One_page_summery extends BaseClass {
 
 	@Then("^Click on pagination number$")
 	public void click_on_pagination_number() throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		// click on 2nd page
 		page_number = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//div[@class='resume-toolbar bottom']//li[2]//a[1]")));
@@ -74,7 +74,7 @@ public class One_page_summery extends BaseClass {
 	public void click_on_any_of_PPT() throws Throwable {
 
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(4000);
 			WebElement select_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='conatiner']//ul/li[3]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
@@ -88,7 +88,7 @@ public class One_page_summery extends BaseClass {
 	public void verify_the_page() throws Throwable {
 
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 			String verify_Download_button = BaseClass.precenceOfElement(By.xpath("//button[@id='clicking']")).getText();
 			Assert.assertTrue("user is not on corect page", verify_Download_button.contains("Download This Document"));
 		} catch (NoSuchElementException e) {
