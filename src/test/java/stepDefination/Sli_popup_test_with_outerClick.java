@@ -23,7 +23,7 @@ public class Sli_popup_test_with_outerClick extends BaseClass {
 	@Given("^Go to Home page$")
 	public void go_to_Home_page() throws Throwable {
 		log.info("It's opening the website URL");
-		Thread.sleep(2000);
+		
 		driver.get(AppURL);
 		BaseClass.ClearBrowserCache();
 	}
