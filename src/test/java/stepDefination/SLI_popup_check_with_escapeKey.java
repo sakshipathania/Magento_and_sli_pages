@@ -29,7 +29,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 
 		log.info("It's opening the website URL");
 		driver.get(AppURL);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		BaseClass.ClearBrowserCache();
 	}
 
