@@ -137,7 +137,7 @@ public class Paid_magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Career 10 minutes self introduction ppt powerpoint presentation slides example"));
+					verify_ppt_page.contains("Competitive analysis template 5 comparison table powerpoint guide"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 
@@ -254,7 +254,7 @@ public class Paid_magento_pages extends BaseClass {
 			if (URL.equals(url)) {
 				Thread.sleep(10000);
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Strategic Management Planning Process Powerpoint Presentation Slides']")));
+					By.xpath("//div[4]/div[2]/ol[1]/li[13]/div[1]/a[1]/img[1]")));
 			        select_ppt.click();
 				break;
 			}
@@ -281,10 +281,10 @@ public class Paid_magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			verify_ppt_page = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Strategic Management Planning Process Powerpoint Presentation Slides"));
+					verify_ppt_page.contains("Download this presentation"));
 			Thread.sleep(2000);
 		} catch (NoSuchElementException e1) {
 
