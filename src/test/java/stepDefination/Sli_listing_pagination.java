@@ -230,7 +230,7 @@ public class Sli_listing_pagination extends BaseClass {
 	public void mouse_hover_on_any_of_one_pptsi() throws Throwable {
 		try {
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//div[@data-direct-url='https://www.slideteam.net/quarterly-roadmap-for-product-training-process-by-manager.html']//img[@id='zoomImg']")));
+					"//div[@data-direct-url='https://www.slideteam.net/change-management-model-powerpoint-presentation-slide-template.html']//img[@id='zoomImg']")));
 			Actions action = new Actions(driver);
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			action.moveToElement(select_ppt).perform();
@@ -246,7 +246,7 @@ public class Sli_listing_pagination extends BaseClass {
 		try {
 			Thread.sleep(2000);
 			// to verify the pop-up
-			String display = driver.findElement(By.xpath("//div[@id = 'imgtip282558']")).getCssValue("display");
+			String display = driver.findElement(By.xpath("//div[@id = 'imgtip33146']")).getCssValue("display");
 			System.out.println("display= " + display);
 			
 			Assert.assertTrue("pop-up is not visible", display.equals("block"));		
