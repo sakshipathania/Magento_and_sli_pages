@@ -218,7 +218,7 @@ public class Sli_listing_pagination extends BaseClass {
 
 		try {
 			WebElement change_Management_training_plans = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//a[@data-suggested-term='change management training plan']//span[@class='highlight'][normalize-space()='management']")));
+					"//a[@data-suggested-term='change management']//span[@class='highlight'][normalize-space()='management']")));
 			change_Management_training_plans.click();
 			System.out.println();
 		} catch (NoSuchElementException e) {
