@@ -272,7 +272,7 @@ public class Paid_magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Strategic Management Planning Process Powerpoint Presentation Slides']")));
+					By.xpath("//div[4]/div[1]/ol[1]/li[6]/div[1]/a[1]/img[1]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
