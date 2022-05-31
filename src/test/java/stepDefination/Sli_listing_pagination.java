@@ -44,7 +44,7 @@ public class Sli_listing_pagination extends BaseClass {
 	public void go_to_the_listing_page() throws Throwable {
 
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			WebElement project_progress = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 					"//a[@data-suggested-term='project progress']//span[@class='highlight'][normalize-space()='progress']")));
 			project_progress.click();
@@ -58,6 +58,7 @@ public class Sli_listing_pagination extends BaseClass {
 	public void mouse_hover_on_any_of_one_ppts() throws Throwable {
 
 		try {
+			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 					"//div[@data-direct-url='https://www.slideteam.net/board-to-track-project-progress-ppt-powerpoint-presentation-portfolio.html']")));
 			Actions action = new Actions(driver);
@@ -169,6 +170,7 @@ public class Sli_listing_pagination extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Sign In']")));
 			//sign_in.click();
 			js.executeScript("arguments[0].click();", sign_in);
+			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 
 		}
