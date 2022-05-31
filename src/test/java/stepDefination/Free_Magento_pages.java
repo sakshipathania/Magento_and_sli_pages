@@ -77,7 +77,7 @@ public class Free_Magento_pages extends BaseClass {
 		Thread.sleep(3000);
 		// click on 2nd page
 		page_number = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[3]//a[1]//span[2]")));
+				.elementToBeClickable(By.xpath("//div[3]/div[1]/div[1]/div[1]/ul[1]/li[3]/strong[1]/span[2]")));
 		pageNumber = page_number.getText();
 		page_number.click();
 
@@ -116,7 +116,7 @@ public class Free_Magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")));
+					.elementToBeClickable(By.xpath("//div[4]/div[1]/ol[1]/li[1]/div[1]/a[1]/img[1]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -129,10 +129,10 @@ public class Free_Magento_pages extends BaseClass {
 		try {
 			Thread.sleep(5000);
 			verify_ppt_page = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Marketing process chart powerpoint icon cc"));
+					verify_ppt_page.contains("Download this presentation"));
 		} catch (NoSuchElementException e) {
 
 		}
@@ -185,7 +185,7 @@ public class Free_Magento_pages extends BaseClass {
 		Thread.sleep(3000);
 		// click on 4th page
 		page_number = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[4]//a[1]//span[2]")));
+				.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[5]//a[1]//span[2]")));
 		pageNumber = page_number.getText();
 		page_number.click();
 
@@ -220,11 +220,11 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^click on any of one ppts$")
 	public void click_on_any_of_one_ppts() throws Throwable {
-		/*Thread.sleep(3000);
+		Thread.sleep(3000);
 		select_ppt = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//img[@title='Belarus map with flag colour']")));
 		js.executeScript("arguments[0].scrollIntoView();", select_ppt);
-		select_ppt.click();*/
+		select_ppt.click();
 	}
 
 	@Then("^verify the navigation on cottect ppt page$")
@@ -315,7 +315,7 @@ public class Free_Magento_pages extends BaseClass {
 			Thread.sleep(3000);
 			// click on 2rd page
 			page_number = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[2]//a[1]//span[2]")));
+					.elementToBeClickable(By.xpath("//div[3]/div[1]/div[1]/div[1]/ul[1]/li[3]/strong[1]/span[2]")));
 			pageNumber = page_number.getText();
 			page_number.click();
 
@@ -356,7 +356,7 @@ public class Free_Magento_pages extends BaseClass {
 		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//img[@title='Branding and marketing powerpoint icon c']")));
+					.elementToBeClickable(By.xpath("//div[4]/div[1]/ol[1]/li[1]/div[1]/a[1]/img[1]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
@@ -369,10 +369,10 @@ public class Free_Magento_pages extends BaseClass {
 		try {
 			Thread.sleep(4000);
 			verify_ppt_page = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Download this presentation']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page",
-					verify_ppt_page.contains("Branding and marketing powerpoint icon c"));
+					verify_ppt_page.contains("Download this presentation"));
 		} catch (NoSuchElementException e) {
 
 		}
@@ -421,7 +421,7 @@ public class Free_Magento_pages extends BaseClass {
 			Thread.sleep(3000);
 			// click on 5th page
 			page_number = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[5]//a[1]//span[2]")));
+					.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[6]//a[1]//span[2]")));
 			pageNumber = page_number.getText();
 			page_number.click();
 
@@ -477,7 +477,7 @@ public class Free_Magento_pages extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[@class='product-gallery-title']")))
 					.getText();
 			Assert.assertTrue("user is not on corect page", verify_ppt_page
-					.contains("Belarus map with flag colour"));
+					.contains("Convenience services examples ppt powerpoint presentation gallery slide cpb"));
 
 			Thread.sleep(4000);
 		} catch (NoSuchElementException e1) {
