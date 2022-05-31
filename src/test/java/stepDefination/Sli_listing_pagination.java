@@ -88,7 +88,7 @@ public class Sli_listing_pagination extends BaseClass {
 	@Then("^click on any of page number and verify the product below$")
 	public void click_on_any_of_page_number_and_verify_the_product_below() throws Throwable {
 		// click on 3rd page
-		/*try {
+		try {
 			page_number = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[3]//ul[1]//li[3]//a[1]")));
 			pageNumber = page_number.getText();
@@ -103,7 +103,7 @@ public class Sli_listing_pagination extends BaseClass {
 			Assert.assertTrue("No product is displayed", product_size > 0);
 		} catch (NoSuchElementException e) {
 
-		}*/
+		}
 		
 		// infinite scrolling
 		/*for (int second = 0;; second++) {
@@ -123,18 +123,18 @@ public class Sli_listing_pagination extends BaseClass {
 
 		}*/
 
-		// provide direct url here
-		driver.get("https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process");
+		// 2nd ottion provide direct url here
+		/*driver.get("https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process");
 			   Thread.sleep(5000);
 
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//div[@class = 'container listing-container sli_generic_container']//ul//li[7]")));
-                                select_ppt.click();
+                                select_ppt.click();*/
 	}
 
 	@Then("^click on any of ppt$")
 	public void click_on_any_of_ppt() throws Throwable {
-		/*try {
+		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 					"//div[@class = 'container listing-container sli_generic_container']//ul//li[7]")));
@@ -142,7 +142,7 @@ public class Sli_listing_pagination extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}*/
+		}
 	}
 
 	@Then("^verify the ppt page$")
@@ -259,7 +259,7 @@ public class Sli_listing_pagination extends BaseClass {
 	@Then("^click on Any of page number and verify the listing pagebelowi$")
 	public void click_on_Any_of_page_number_and_verify_the_listing_pagebelow() throws Throwable {
 		// click on 4th page
-	/*	try {
+		try {
 			page_number = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[3]//ul[1]//li[4]//a[1]")));
 			pageNumber = page_number.getText();
@@ -274,7 +274,7 @@ public class Sli_listing_pagination extends BaseClass {
 			Assert.assertTrue("No product is displayed", product_size > 0);
 		} catch (NoSuchElementException e) {
 
-		}*/
+		}
 		
 		/*for (int second = 0;; second++) {
 			
@@ -293,17 +293,18 @@ public class Sli_listing_pagination extends BaseClass {
 
 		}*/
 		
-		driver.get("https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process");
+		// 2nd otion just undo this code only for infinite scrolling
+		/*driver.get("https://www.slideteam.net/search/go?lbc=slideteam&method=and&p=Q&srt=100&ts=custom&uid=759488953&w=Project%20Process");
 			        Thread.sleep(5000);
 
 				select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//div[@class = 'container listing-container sli_generic_container']//ul//li[7]")));
-                                select_ppt.click();
+                                select_ppt.click();*/
 	}
 
 	@Then("^click on any of ppti$")
 	public void click_on_any_of_ppti() throws Throwable {
-		/*try {
+		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//div[@class = 'container listing-container sli_generic_container']//ul//li[4]")));
@@ -311,7 +312,7 @@ public class Sli_listing_pagination extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}*/
+		}
 	}
 
 	@Then("^verify the navigation on cottect ppt pageii$")
