@@ -77,7 +77,7 @@ public class Free_Magento_pages extends BaseClass {
 		Thread.sleep(3000);
 		// click on 2nd page
 		page_number = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[3]/div[1]/div[1]/div[1]/ul[1]/li[3]/strong[1]/span[2]")));
+				.elementToBeClickable(By.xpath("//div[3]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/span[2]")));
 		pageNumber = page_number.getText();
 		page_number.click();
 
@@ -185,7 +185,7 @@ public class Free_Magento_pages extends BaseClass {
 		Thread.sleep(3000);
 		// click on 4th page
 		page_number = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[5]//a[1]//span[2]")));
+				.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[4]//a[1]//span[2]")));
 		pageNumber = page_number.getText();
 		page_number.click();
 
@@ -315,7 +315,7 @@ public class Free_Magento_pages extends BaseClass {
 			Thread.sleep(3000);
 			// click on 2rd page
 			page_number = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[3]/div[1]/div[1]/div[1]/ul[1]/li[3]/strong[1]/span[2]")));
+					.elementToBeClickable(By.xpath("//div[3]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/span[2]")));
 			pageNumber = page_number.getText();
 			page_number.click();
 
@@ -421,7 +421,7 @@ public class Free_Magento_pages extends BaseClass {
 			Thread.sleep(3000);
 			// click on 5th page
 			page_number = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[6]//a[1]//span[2]")));
+					.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[5]//a[1]//span[2]")));
 			pageNumber = page_number.getText();
 			page_number.click();
 
