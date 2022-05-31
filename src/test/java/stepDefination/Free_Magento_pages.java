@@ -76,7 +76,7 @@ public class Free_Magento_pages extends BaseClass {
 	public void click_on_any_of_page_number_and_verify_the_listing_page_for_free_ppts() throws Throwable {
 		Thread.sleep(3000);
 		// click on 2nd page
-		/*page_number = wait.until(ExpectedConditions
+		page_number = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[3]//a[1]//span[2]")));
 		pageNumber = page_number.getText();
 		page_number.click();
@@ -87,11 +87,11 @@ public class Free_Magento_pages extends BaseClass {
 		System.out.println("Total product on " + pageNumber + "rd page = " + productSize.size());
 
 		product_size = productSize.size();
-		Assert.assertTrue("No product is displayed", product_size > 0);*/
+		Assert.assertTrue("No product is displayed", product_size > 0);
 		
 		//code for infinite scrolling
 		
-		for (int second = 0;; second++) {
+		/*for (int second = 0;; second++) {
 			if (second >= 30) {
 				break;
 			}
@@ -107,13 +107,13 @@ public class Free_Magento_pages extends BaseClass {
 			      break;
 			}
 
-		}
+		}*/
 
 	}
 
 	@Then("^click on any of one ppt under free ppts$")
 	public void click_on_any_of_one_ppt_under_free_ppts() throws Throwable {
-		/*try {
+		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//img[@title='Marketing process chart powerpoint icon cc']")));
@@ -121,7 +121,7 @@ public class Free_Magento_pages extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}*/
+		}
 	}
 
 	@Then("^verify the navigation on correct ppt page$")
@@ -184,7 +184,7 @@ public class Free_Magento_pages extends BaseClass {
 	public void click_on_any_of_page_numberi() throws Throwable {
 		Thread.sleep(3000);
 		// click on 4th page
-		/*page_number = wait.until(ExpectedConditions
+		page_number = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//div[3]//div[1]//div[1]//div[1]//ul[1]//li[4]//a[1]//span[2]")));
 		pageNumber = page_number.getText();
 		page_number.click();
@@ -195,11 +195,11 @@ public class Free_Magento_pages extends BaseClass {
 		System.out.println("Total product on " + pageNumber + "th page = " + productSize.size());
 
 		product_size = productSize.size();
-		Assert.assertTrue("No product is displayed", product_size > 0);*/
+		Assert.assertTrue("No product is displayed", product_size > 0);
 		
 		//code for infinite scrolling, clicking on page 2
 		
-		for (int second = 0;; second++) {
+		/*for (int second = 0;; second++) {
 			if (second >= 30) {
 				break;
 			}
@@ -215,7 +215,7 @@ public class Free_Magento_pages extends BaseClass {
 				break;
 			}
 
-		}
+		}*/
 	}
 
 	@Then("^click on any of one ppts$")
@@ -311,7 +311,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^Click on any of page number and verify the listing page for free ppts$")
 	public void Click_on_any_of_page_number_and_verify_the_listing_page_for_free_ppts() throws Throwable {
-		/*try {
+		try {
 			Thread.sleep(3000);
 			// click on 2rd page
 			page_number = wait.until(ExpectedConditions
@@ -328,10 +328,11 @@ public class Free_Magento_pages extends BaseClass {
 			Assert.assertTrue("No product is displayed", product_size > 0);
 		} catch (NoSuchElementException e) {
 
-		}*/
+		}
 		
 		// code for infinite scrolling
-		for (int second = 0;; second++) {
+		
+		/*for (int second = 0;; second++) {
 			if (second >= 30) {
 				break;
 			}
@@ -347,12 +348,12 @@ public class Free_Magento_pages extends BaseClass {
 				break;
 			}
 
-		}
+		}*/
 	}
 
 	@Then("^Click on any of one ppt under free ppts$")
 	public void Click_on_any_of_one_ppt_under_free_ppts() throws Throwable {
-		/*try {
+		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//img[@title='Branding and marketing powerpoint icon c']")));
@@ -360,7 +361,7 @@ public class Free_Magento_pages extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}*/
+		}
 	}
 
 	@Then("^Verify the navigation on correct ppt page$")
@@ -416,7 +417,7 @@ public class Free_Magento_pages extends BaseClass {
 
 	@Then("^Click on any of page numberii$")
 	public void click_on_any_of_page_numberii() throws Throwable {
-		/*try {
+		try {
 			Thread.sleep(3000);
 			// click on 5th page
 			page_number = wait.until(ExpectedConditions
@@ -433,11 +434,11 @@ public class Free_Magento_pages extends BaseClass {
 			Assert.assertTrue("No product is displayed", product_size > 0);
 		} catch (NoSuchElementException e) {
 
-		}*/
+		}
 		
 		//code for infinite scrolling, clicking on page 2
 		
-		for (int second = 0;; second++) {
+		/*for (int second = 0;; second++) {
 			if (second >= 30) {
 				break;
 			}
@@ -452,12 +453,12 @@ public class Free_Magento_pages extends BaseClass {
 				break;
 			}
 
-		}
+		}*/
 	}
 
 	@Then("^Click on any of one ppts$")
 	public void Click_on_any_of_one_ppts() throws Throwable {
-		/*try {
+		try {
 			Thread.sleep(3000);
 			select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 					"//img[@title='Convenience services examples ppt powerpoint presentation gallery slide cpb']")));
@@ -465,7 +466,7 @@ public class Free_Magento_pages extends BaseClass {
 			select_ppt.click();
 		} catch (NoSuchElementException e) {
 
-		}*/
+		}
 	}
 
 	@Then("^Verify the navigation on cottect ppt pageii$")
