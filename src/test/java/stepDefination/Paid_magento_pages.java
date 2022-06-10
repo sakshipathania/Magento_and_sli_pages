@@ -164,10 +164,11 @@ public class Paid_magento_pages extends BaseClass {
 			Thread.sleep(3000);
 			WebElement email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
 			email.sendKeys(username);
-
+                        Thread.sleep(2000);
 			WebElement password_field = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//fieldset[@class='fieldset login']//input[@id='pass']")));
 			password_field.sendKeys(password);
+			Thread.sleep(3000);
 			WebElement login_btn = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Login']")));
 			login_btn.click();
@@ -187,7 +188,8 @@ public class Paid_magento_pages extends BaseClass {
 	public void Click_on_popular_ppts() throws Throwable {
 		// click on Popular ppts after login
 		try {
-			//Thread.sleep(2000);
+			driver.navigate().refresh();
+			Thread.sleep(3000);
 			popular_Ppts = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Popular PPTs")));
 			popular_Ppts.click();
 		} catch (NoSuchElementException e) {
