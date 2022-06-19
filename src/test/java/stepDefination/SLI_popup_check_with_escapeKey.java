@@ -183,7 +183,7 @@ public class SLI_popup_check_with_escapeKey extends BaseClass {
 	@Then("enter data in Search fields")
 	public void enter_data_in_Search_fields() throws Throwable {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			search_field = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search']")));
 			search_field.sendKeys("Management");
 			Thread.sleep(3000);
