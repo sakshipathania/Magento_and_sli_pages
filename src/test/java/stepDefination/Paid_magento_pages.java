@@ -301,6 +301,7 @@ public class Paid_magento_pages extends BaseClass {
 			Thread.sleep(2000);
 			WebElement sign_Out = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign Out")));
 			sign_Out.click();
+			Thread.sleep(4000);
 		} catch (NoSuchElementException e) {
 
 		}
