@@ -26,6 +26,7 @@ public class Free_Magento_pages extends BaseClass {
 	@Given("^User is on Home Pagei$")
 	public void user_is_on_Home_Pagei() throws Throwable {
 		driver.get(AppURL);
+		Thread.sleep(5000);
 		log.info("It's opening the website URL");
 		BaseClass.ClearBrowserCache();
 	}
@@ -487,8 +488,9 @@ public class Free_Magento_pages extends BaseClass {
 		try {
 			Thread.sleep(4000);
 			WebElement sign_Out = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign Out")));
+			Thread.sleep(3000);
 			sign_Out.click();
-			Thread.sleep(4000);
+			Thread.sleep(6000);
 		} catch (NoSuchElementException e) {
 
 		}
