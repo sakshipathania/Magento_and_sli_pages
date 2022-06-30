@@ -488,6 +488,7 @@ public class Free_Magento_pages extends BaseClass {
 			Thread.sleep(4000);
 			WebElement sign_Out = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign Out")));
 			sign_Out.click();
+			Thread.sleep(4000);
 		} catch (NoSuchElementException e) {
 
 		}
