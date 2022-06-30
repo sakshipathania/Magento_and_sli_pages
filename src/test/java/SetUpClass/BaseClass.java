@@ -62,14 +62,14 @@ public class BaseClass {
 			options.addArguments("--incognito"); // DesiredCapabilities object
 			DesiredCapabilities c = DesiredCapabilities.chrome(); // set capability to
 			c.setCapability(ChromeOptions.CAPABILITY, options);
-                        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+               		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 			driver = new ChromeDriver(options);
 
 			driver.manage().window().maximize();
 
 			driver.get(AppURL);
 			driver.manage().timeouts().implicitlyWait(9000, TimeUnit.MILLISECONDS);
-			//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			wait = new WebDriverWait(driver, 30);
 			js = (JavascriptExecutor) driver;
 		}
